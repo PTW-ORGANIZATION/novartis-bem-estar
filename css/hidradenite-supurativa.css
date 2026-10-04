@@ -1,0 +1,817 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.hidradenite-supurativa-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.hidradenite-supurativa-hero__image {
+  left: 477px;
+  width: calc(100% - 477px);
+  object-position: 50% 50%;
+}
+
+.hidradenite-supurativa-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.hidradenite-supurativa-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.hidradenite-supurativa-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.hidradenite-supurativa-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.hidradenite-supurativa-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.hidradenite-supurativa-overview__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-overview__inner h2,
+.hidradenite-supurativa-symptoms__inner h2,
+.hidradenite-supurativa-diagnosis__content h2,
+.hidradenite-supurativa-how__inner h2,
+.hidradenite-supurativa-treatment__inner h2,
+.hidradenite-supurativa-living__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-overview__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.hidradenite-supurativa-overview__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.hidradenite-supurativa-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-overview__text sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue-dark) !important;
+}
+
+.hidradenite-supurativa-overview__image {
+  flex: 0 0 auto;
+  width: 430px;
+  height: 478px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hidradenite-supurativa-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidradenite-supurativa-who {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hidradenite-supurativa-who__icon {
+  flex: 0 0 auto;
+  width: 218px;
+  height: 207px;
+}
+
+.hidradenite-supurativa-who__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.hidradenite-supurativa-who__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-white);
+}
+
+.hidradenite-supurativa-who__content h3 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hidradenite-supurativa-who__content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hidradenite-supurativa-who__lead {
+  font-weight: 700 !important;
+}
+
+.hidradenite-supurativa-who__content sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-symptoms__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-symptoms__lead p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-symptoms__lead p + p {
+  margin-top: 10px;
+}
+
+.hidradenite-supurativa-symptoms__lead sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-symptoms__list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.hidradenite-supurativa-symptoms__list li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.hidradenite-supurativa-symptoms__list li strong {
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.hidradenite-supurativa-symptoms__list li sup {
+  font-size: 12px;
+  color: var(--color-gray-text);
+}
+
+.hidradenite-supurativa-symptoms__highlight {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-symptoms__highlight sup {
+  font-size: 14px;
+}
+
+.hidradenite-supurativa-diagnosis {
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-diagnosis__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hidradenite-supurativa-diagnosis__image {
+  flex: 0 0 auto;
+  width: 502px;
+  height: 385px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hidradenite-supurativa-diagnosis__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidradenite-supurativa-diagnosis__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-diagnosis__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-diagnosis__lead sup {
+  font-size: 14px;
+}
+
+.hidradenite-supurativa-diagnosis__content > p:not(.hidradenite-supurativa-diagnosis__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-diagnosis__content sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-how {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-how__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-how__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+  width: 100%;
+}
+
+.hidradenite-supurativa-how__lead sup {
+  font-size: 14px;
+}
+
+.hidradenite-supurativa-how__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+  width: 100%;
+}
+
+.hidradenite-supurativa-how__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.hidradenite-supurativa-how-card {
+  flex: 1 1 300px;
+  height: 193px;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-how-card--characteristics {
+  flex: 0 0 338px;
+}
+
+.hidradenite-supurativa-how-card--location {
+  flex: 0 0 382px;
+}
+
+.hidradenite-supurativa-how-card--recurrence {
+  flex: 0 0 381px;
+}
+
+.hidradenite-supurativa-how-card__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-how-card__header img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.hidradenite-supurativa-how-card--characteristics .hidradenite-supurativa-how-card__header img {
+  width: 58px;
+  height: 37px;
+}
+
+.hidradenite-supurativa-how-card--location .hidradenite-supurativa-how-card__header img {
+  width: 40px;
+  height: 48px;
+}
+
+.hidradenite-supurativa-how-card--recurrence .hidradenite-supurativa-how-card__header img {
+  width: 48px;
+  height: 53px;
+}
+
+.hidradenite-supurativa-how-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-how-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-how-card p sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-how__note {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+  width: 100%;
+}
+
+.hidradenite-supurativa-how__note sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-how__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.hidradenite-supurativa-how__highlight p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hidradenite-supurativa-how__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hidradenite-supurativa-treatment {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-treatment__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-treatment__lead p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-treatment__lead p + p {
+  margin-top: 26px;
+}
+
+.hidradenite-supurativa-treatment__lead p:first-child {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.hidradenite-supurativa-treatment__lead sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-treatment__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.hidradenite-supurativa-treatment-card {
+  flex: 1 1 300px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-treatment-card img {
+  width: 66px;
+  height: 66px;
+}
+
+.hidradenite-supurativa-treatment-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.hidradenite-supurativa-treatment-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-treatment-card p sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-living {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-living__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-living__lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-living__lead sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-living__subheading {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-living__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.hidradenite-supurativa-living__list {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-blue-bg);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-living-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e4eb;
+}
+
+.hidradenite-supurativa-living-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.hidradenite-supurativa-living-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+
+.hidradenite-supurativa-living-item__header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.hidradenite-supurativa-living-item__icon {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.hidradenite-supurativa-living-item.is-collapsed .hidradenite-supurativa-living-item__icon {
+  transform: rotate(-90deg);
+}
+
+.hidradenite-supurativa-living-item.is-collapsed p {
+  display: none;
+}
+
+.hidradenite-supurativa-living-item p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.hidradenite-supurativa-living-item p sup {
+  font-size: 12px;
+}
+
+.hidradenite-supurativa-living__image {
+  flex: 0 0 auto;
+  width: 439px;
+  height: 909px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hidradenite-supurativa-living__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidradenite-supurativa-articles {
+  padding-block: 40px;
+}
+
+.hidradenite-supurativa-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hidradenite-supurativa-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hidradenite-supurativa-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hidradenite-supurativa-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.hidradenite-supurativa-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.hidradenite-supurativa-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.hidradenite-supurativa-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .hidradenite-supurativa-overview__content,
+  .hidradenite-supurativa-diagnosis__inner,
+  .hidradenite-supurativa-living__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hidradenite-supurativa-overview__image,
+  .hidradenite-supurativa-diagnosis__image,
+  .hidradenite-supurativa-living__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .hidradenite-supurativa-who {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hidradenite-supurativa-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.hidradenite-supurativa-hero {
+    height: auto;
+  }.hidradenite-supurativa-hero__content h1,
+  .hidradenite-supurativa-hero__content p {
+    max-width: 100%;
+  }.hidradenite-supurativa-how__grid,
+  .hidradenite-supurativa-treatment__grid {
+    flex-direction: column;
+  }.hidradenite-supurativa-how-card,
+  .hidradenite-supurativa-treatment-card {
+    flex-basis: auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,890 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.esclerose-multipla-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-hero__image {
+  left: 485px;
+  width: calc(100% - 485px);
+  object-position: 50% 18%;
+}
+
+.esclerose-multipla-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.esclerose-multipla-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.esclerose-multipla-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.esclerose-multipla-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.esclerose-multipla-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.esclerose-multipla-types {
+  padding-block: 40px;
+}
+
+.esclerose-multipla-types__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.esclerose-multipla-types__intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.esclerose-multipla-types__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  min-width: 0;
+  color: var(--color-blue-dark);
+}
+
+.esclerose-multipla-types__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.esclerose-multipla-types__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue-dark) !important;
+}
+
+.esclerose-multipla-types__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-types__text sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-types__image {
+  flex: 0 0 auto;
+  width: 493px;
+  height: 339px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.esclerose-multipla-types__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.esclerose-multipla-types__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.esclerose-multipla-types-card {
+  flex: 1 1 520px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-types-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.esclerose-multipla-types-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.esclerose-multipla-types-card__icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.esclerose-multipla-types-card.is-collapsed .esclerose-multipla-types-card__icon {
+  transform: rotate(-90deg);
+}
+
+.esclerose-multipla-types-card.is-collapsed .esclerose-multipla-types-card__text {
+  display: none;
+}
+
+.esclerose-multipla-types-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.esclerose-multipla-types-card__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-types-card__text p strong {
+  font-weight: 700;
+}
+
+.esclerose-multipla-types-card__text sup {
+  font-size: 11px;
+}
+
+.esclerose-multipla-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.esclerose-multipla-symptoms__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-symptoms__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-symptoms__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-symptoms__lead sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-symptoms__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.esclerose-multipla-symptoms__card {
+  flex: 1 1 350px;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-symptoms__card-icon {
+  flex: 0 0 auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esclerose-multipla-symptoms__card-icon--full {
+  background: none;
+}
+
+.esclerose-multipla-symptoms__card-icon img {
+  max-width: 50px;
+  max-height: 48px;
+}
+
+.esclerose-multipla-symptoms__card-icon--full img {
+  width: 66px;
+  height: 66px;
+  max-width: none;
+  max-height: none;
+}
+
+.esclerose-multipla-symptoms__card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.esclerose-multipla-symptoms__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-symptoms__card p sup {
+  font-size: 11px;
+}
+
+.esclerose-multipla-symptoms__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.esclerose-multipla-symptoms__highlight img {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 91px;
+}
+
+.esclerose-multipla-symptoms__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.esclerose-multipla-symptoms__highlight-text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.esclerose-multipla-symptoms__highlight-title {
+  font-weight: 800 !important;
+  font-size: 22px !important;
+}
+
+.esclerose-multipla-symptoms__highlight-text sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-progression {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.esclerose-multipla-progression__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-progression__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-progression__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-progression__lead sup {
+  font-size: 14px;
+}
+
+.esclerose-multipla-accordion {
+  width: 100%;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.esclerose-multipla-accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.esclerose-multipla-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.esclerose-multipla-accordion__header h3,
+.esclerose-multipla-accordion__header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.esclerose-multipla-accordion__icon {
+  flex: 0 0 auto;
+  width: 30.649px;
+  height: 30.649px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.esclerose-multipla-accordion__item.is-collapsed .esclerose-multipla-accordion__icon {
+  transform: rotate(-90deg);
+}
+
+.esclerose-multipla-accordion__item.is-collapsed .esclerose-multipla-accordion__text {
+  display: none;
+}
+
+.esclerose-multipla-accordion__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.esclerose-multipla-accordion__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-accordion__text p strong {
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.esclerose-multipla-accordion__text ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.esclerose-multipla-accordion__text li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.esclerose-multipla-accordion__text sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-accordion__divider {
+  width: 100%;
+  height: 1px;
+  background: #e1e4eb;
+}
+
+.esclerose-multipla-diagnosis {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.esclerose-multipla-diagnosis__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.esclerose-multipla-diagnosis__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.esclerose-multipla-diagnosis__block h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-diagnosis__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-diagnosis__lead sup {
+  font-size: 14px;
+}
+
+.esclerose-multipla-diagnosis__block > p:not(.esclerose-multipla-diagnosis__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-diagnosis__block > p:not(.esclerose-multipla-diagnosis__lead) strong {
+  font-weight: 700;
+}
+
+.esclerose-multipla-diagnosis__block > p:not(.esclerose-multipla-diagnosis__lead) sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-diagnosis__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.esclerose-multipla-diagnosis__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-diagnosis__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 597px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.esclerose-multipla-diagnosis__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.esclerose-multipla-diagnosis__highlight {
+  width: 100%;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-diagnosis__highlight h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.esclerose-multipla-diagnosis__highlight p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.esclerose-multipla-diagnosis__highlight sup {
+  font-size: 12px;
+}
+
+.esclerose-multipla-myths {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.esclerose-multipla-myths__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.esclerose-multipla-myths__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-myths__grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.esclerose-multipla-myths-card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.esclerose-multipla-myths-card__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.esclerose-multipla-myths-card__header img {
+  flex: 0 0 auto;
+  width: 76.62px;
+  height: 46.56px;
+}
+
+.esclerose-multipla-myths-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-myths-card .esclerose-multipla-accordion__item {
+  gap: 10px;
+}
+
+.esclerose-multipla-campaign {
+  padding-block: 40px;
+}
+
+.esclerose-multipla-campaign__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.esclerose-multipla-campaign__banner {
+  position: relative;
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.esclerose-multipla-campaign__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67.11%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  z-index: 0;
+}
+
+.esclerose-multipla-campaign__banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--color-blue) 35%, rgba(4, 96, 169, 0) 70%);
+  z-index: 1;
+}
+
+.esclerose-multipla-campaign__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 614px;
+}
+
+.esclerose-multipla-campaign__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.esclerose-multipla-campaign__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.esclerose-multipla-campaign__text sup {
+  font-size: 11px;
+}
+
+.esclerose-multipla-campaign__btn {
+  background: var(--color-white);
+  color: var(--color-blue-dark);
+  padding: 8px 16px;
+}
+
+.esclerose-multipla-articles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.esclerose-multipla-articles h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.esclerose-multipla-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.esclerose-multipla-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.esclerose-multipla-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.esclerose-multipla-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.esclerose-multipla-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .esclerose-multipla-types__intro,
+  .esclerose-multipla-diagnosis__content,
+  .esclerose-multipla-myths__grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .esclerose-multipla-types__image,
+  .esclerose-multipla-diagnosis__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .esclerose-multipla-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.esclerose-multipla-hero {
+    height: auto;
+  }.esclerose-multipla-hero__content h1,
+  .esclerose-multipla-hero__content p {
+    max-width: 100%;
+  }.esclerose-multipla-types__grid,
+  .esclerose-multipla-symptoms__grid {
+    flex-direction: column;
+  }.esclerose-multipla-types-card,
+  .esclerose-multipla-symptoms__card {
+    flex-basis: auto;
+    width: 100%;
+  }.esclerose-multipla-symptoms__highlight {
+    flex-direction: column;
+    text-align: center;
+  }.esclerose-multipla-campaign__content {
+    max-width: 100%;
+  }
+}

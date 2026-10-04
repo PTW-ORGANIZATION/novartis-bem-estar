@@ -1,0 +1,261 @@
+.fc-top {
+  background: var(--color-blue-bg);
+  padding-block: 20px 40px;
+}
+
+.fc-top__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-white);
+  padding: 6px 13px;
+  border-radius: 400px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 100%;
+}
+
+.breadcrumb img {
+  width: 5px;
+  height: 8px;
+}
+
+.breadcrumb .is-current {
+  color: var(--color-blue);
+}
+
+.fale-conosco-banner__image {
+  object-position: 50% 100%;
+}
+
+.fc-info {
+  background: var(--color-blue-bg);
+  padding-bottom: 40px;
+}
+
+.fc-info__inner {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fc-contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 480px;
+  max-width: 560px;
+}
+
+.fc-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fc-card__title {
+  color: var(--color-blue-dark);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fc-card__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fc-card__row img {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
+}
+
+.fc-card__number {
+  color: var(--color-blue);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.fc-card__number--email {
+  font-weight: 800;
+  word-break: break-word;
+}
+
+.fc-hours {
+  flex: 1 1 560px;
+  max-width: 560px;
+  min-height: 395px;
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px;
+}
+
+.fc-hours__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 237px;
+}
+
+.fc-hours__item img {
+  width: 63px;
+  height: 64px;
+}
+
+.fc-hours__item p {
+  color: var(--color-gray-text);
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+
+.fc-hours__divider {
+  width: 1px;
+  height: 130px;
+  background: rgba(4, 32, 104, 0.15);
+}
+
+.fc-emergency {
+  background: var(--color-blue);
+  padding-block: 40px;
+}
+
+.fc-emergency__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.fc-emergency img {
+  width: 40px;
+  height: 41px;
+}
+
+.fc-emergency p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 860px;
+  margin: 0;
+}
+
+.fc-emergency p strong {
+  font-weight: 700;
+}
+
+.fc-emergency__email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue-light);
+  color: var(--color-blue-dark);
+  font-size: 22px;
+  font-weight: 700;
+  height: 48px;
+  padding: 9px 20px;
+  border-radius: 40px;
+}
+
+@media (max-width: 600px) {
+  .fale-conosco-banner {
+    height: auto;
+    aspect-ratio: 354 / 284;
+  }
+
+  .fale-conosco-banner::after {
+    background: linear-gradient(to top, rgba(24, 110, 176, 0.8) 20%, rgba(94, 164, 218, 0) 70%);
+  }
+
+  .fale-conosco-banner__image {
+    inset: auto;
+    top: 0;
+    left: -176.86%;
+    width: 327.3%;
+    height: 100%;
+    max-width: none;
+    object-fit: unset;
+    object-position: unset;
+  }
+
+  .fale-conosco-banner__content {
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 32px;
+  }
+
+  .fale-conosco-banner__content h1 {
+    font-size: 30px;
+  }
+
+  .fc-info__inner {
+    flex-direction: column;
+  }
+
+  .fc-contact-cards,
+  .fc-hours {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .fc-card {
+    padding: 30px;
+  }
+
+  .fc-card__number--email {
+    font-size: 19px;
+  }
+
+  .fc-hours {
+    background: transparent;
+    min-height: auto;
+    padding: 20px 0;
+    gap: 30px;
+  }
+
+  .fc-hours__item {
+    max-width: 149px;
+  }
+
+  .fc-hours__item img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .fc-hours__item p {
+    font-size: 18px;
+  }
+
+  .fc-hours__divider {
+    height: 128px;
+  }
+
+  .fc-emergency__email {
+    font-size: 19px;
+    width: 100%;
+    max-width: 342px;
+  }
+}
+

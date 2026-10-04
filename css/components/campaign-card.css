@@ -1,0 +1,122 @@
+.campaign-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.campaign-card__image {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+  background: #e5d8cc;
+}
+
+.campaign-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-card__image img[src*="hidradenite"] {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  left: 10%;
+  top: -33.7%;
+  object-fit: unset;
+}
+
+.campaign-card__body {
+  padding: 24px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campaign-card__category {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-blue);
+}
+
+.campaign-card__body h3 {
+  color: var(--color-blue-dark);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.264px;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.campaign-card__body p {
+  color: var(--color-gray-text);
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.campaign-card--empty .campaign-card__image {
+  background: #f9faff;
+}
+
+.campaign-card__placeholder {
+  display: block;
+  background: var(--color-blue-bg);
+  border-radius: 40px;
+  height: 16px;
+  width: 100%;
+}
+
+.campaign-card__placeholder--tag {
+  width: 27px;
+}
+
+.campaign-card__placeholder--title {
+  width: 204px;
+  height: 26px;
+}
+
+.campaign-card__placeholder--line-short {
+  width: 284px;
+}
+
+.campaign-card--cta {
+  align-items: center;
+  align-self: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  width: 374px;
+  background: transparent;
+  border-radius: 0;
+}
+
+.campaign-card--cta p {
+  margin: 0;
+  color: var(--color-gray-text);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 276px;
+}
+
+.campaign-card--cta .btn {
+  align-self: center;
+  padding: 9px 32px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 600px) {
+  .campaign-card--empty + .campaign-card--empty {
+    display: none;
+  }
+
+  .campaign-card--cta .btn {
+    width: 308px;
+    max-width: 100%;
+    height: 47px;
+  }
+}

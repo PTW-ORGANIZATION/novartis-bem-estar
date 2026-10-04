@@ -1,0 +1,1032 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.mielofibrose-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.mielofibrose-hero__image {
+  left: 486px;
+  width: calc(100% - 486px);
+  object-position: 50% 50%;
+}
+
+.mielofibrose-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.mielofibrose-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.mielofibrose-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.mielofibrose-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.mielofibrose-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.mielofibrose-overview {
+  padding-block: 40px;
+}
+
+.mielofibrose-overview__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mielofibrose-overview__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.mielofibrose-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 378px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mielofibrose-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mielofibrose-overview__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-overview__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.mielofibrose-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-overview__text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-overview__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mielofibrose-overview__highlight img {
+  flex: 0 0 auto;
+  width: 176px;
+  height: 176px;
+}
+
+.mielofibrose-overview__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mielofibrose-overview__highlight-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.mielofibrose-overview__highlight-text p:not(.mielofibrose-overview__highlight-title) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.mielofibrose-overview__highlight-text strong {
+  font-weight: 700;
+}
+
+.mielofibrose-overview__highlight-text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-classification {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.mielofibrose-classification__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-classification__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-classification__lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-classification__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.mielofibrose-classification-card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mielofibrose-classification-card__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.mielofibrose-classification-card__text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.22px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-classification-card__text sup {
+  font-size: 14px;
+}
+
+.mielofibrose-classification__note {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.mielofibrose-classification__note sup {
+  font-size: 14px;
+}
+
+.mielofibrose-symptoms {
+  padding-block: 40px;
+}
+
+.mielofibrose-symptoms__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mielofibrose-symptoms__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 795px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mielofibrose-symptoms__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mielofibrose-symptoms__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-symptoms__content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-symptoms__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-symptoms__lead sup {
+  font-size: 14px;
+}
+
+.mielofibrose-symptoms__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-symptoms__intro sup {
+  font-size: 12px;
+}
+
+.mielofibrose-symptoms__list {
+  list-style: disc;
+  padding-left: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.mielofibrose-symptoms__list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.mielofibrose-symptoms__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.mielofibrose-symptoms__highlight p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.mielofibrose-symptoms__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mielofibrose-symptoms__highlight sup {
+  font-size: 14px;
+}
+
+.mielofibrose-effects {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.mielofibrose-effects__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-effects__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-effects__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-effects__lead sup {
+  font-size: 14px;
+}
+
+.mielofibrose-effects__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.mielofibrose-effects__card {
+  flex: 1 1 340px;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-effects__card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.mielofibrose-effects__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-effects__card p sup {
+  font-size: 12px;
+}
+
+.mielofibrose-accordion {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.mielofibrose-accordion--full {
+  width: 100%;
+  background: var(--color-blue-bg);
+}
+
+.mielofibrose-accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mielofibrose-accordion__item:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e4eb;
+}
+
+.mielofibrose-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.mielofibrose-accordion__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.mielofibrose-accordion__chevron {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+.mielofibrose-accordion__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.mielofibrose-accordion__text,
+.mielofibrose-accordion__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-accordion__text strong {
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.mielofibrose-accordion__text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-diagnosis {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.mielofibrose-diagnosis__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-diagnosis__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-diagnosis__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-diagnosis__lead sup {
+  font-size: 14px;
+}
+
+.mielofibrose-diagnosis__intro {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-diagnosis__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.mielofibrose-diagnosis__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 778px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mielofibrose-diagnosis__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mielofibrose-treatment {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.mielofibrose-treatment__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-treatment__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-treatment__intro {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-treatment__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-treatment__lead sup {
+  font-size: 14px;
+}
+
+.mielofibrose-treatment__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-treatment__text strong {
+  font-weight: 700;
+}
+
+.mielofibrose-treatment__text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-treatment-effects {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.mielofibrose-treatment-effects__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mielofibrose-treatment-effects__image {
+  flex: 0 0 auto;
+  width: 502px;
+  height: 442px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mielofibrose-treatment-effects__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mielofibrose-treatment-effects__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mielofibrose-treatment-effects__content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-treatment-effects__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue-dark) !important;
+}
+
+.mielofibrose-treatment-effects__content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-treatment-effects__content p strong {
+  font-weight: 600;
+}
+
+.mielofibrose-treatment-effects__content sup {
+  font-size: 12px;
+}
+
+.mielofibrose-monitoring {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.mielofibrose-monitoring__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-monitoring__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-monitoring__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-monitoring__text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-monitoring__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-monitoring__lead sup {
+  font-size: 14px;
+}
+
+.mielofibrose-living {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.mielofibrose-living__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mielofibrose-living__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.mielofibrose-living__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-living__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-living__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.mielofibrose-living__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.mielofibrose-living__text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-living__image {
+  flex: 0 0 auto;
+  width: 502px;
+  height: 378px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mielofibrose-living__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mielofibrose-living__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mielofibrose-living__highlight img {
+  flex: 0 0 auto;
+  width: 144px;
+  height: 156px;
+}
+
+.mielofibrose-living__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-white);
+}
+
+.mielofibrose-living__highlight-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.mielofibrose-living__highlight-text p:not(.mielofibrose-living__highlight-title) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.mielofibrose-living__highlight-text strong {
+  font-weight: 700;
+}
+
+.mielofibrose-living__highlight-text sup {
+  font-size: 12px;
+}
+
+.mielofibrose-articles {
+  padding-block: 40px;
+}
+
+.mielofibrose-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mielofibrose-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.mielofibrose-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mielofibrose-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.mielofibrose-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.mielofibrose-references__inner .references-list a {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.mielofibrose-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.mielofibrose-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .mielofibrose-overview__content,
+  .mielofibrose-symptoms__inner,
+  .mielofibrose-diagnosis__content,
+  .mielofibrose-treatment-effects__inner,
+  .mielofibrose-living__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mielofibrose-overview__image,
+  .mielofibrose-symptoms__image,
+  .mielofibrose-diagnosis__image,
+  .mielofibrose-treatment-effects__image,
+  .mielofibrose-living__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mielofibrose-overview__highlight,
+  .mielofibrose-living__highlight {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mielofibrose-classification__grid {
+    flex-direction: column;
+  }
+
+  .mielofibrose-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.mielofibrose-hero {
+    height: auto;
+  }.mielofibrose-hero__content h1,
+  .mielofibrose-hero__content p {
+    max-width: 100%;
+  }.mielofibrose-effects__grid {
+    flex-direction: column;
+  }.mielofibrose-effects__card {
+    flex-basis: auto;
+    width: 100%;
+  }.mielofibrose-accordion__header {
+    align-items: flex-start;
+  }
+}

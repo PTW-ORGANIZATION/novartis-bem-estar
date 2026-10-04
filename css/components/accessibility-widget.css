@@ -1,0 +1,31 @@
+.a11y-widget {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  background: var(--color-blue-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 15px 20px;
+  border-radius: 16px 0 0 16px;
+  z-index: 40;
+}
+
+.a11y-widget button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42.463px;
+  height: 42.463px;
+}
+
+.a11y-widget img {
+  width: 42.463px;
+  height: 42.463px;
+}
+
+@media (max-width: 720px) {
+  .a11y-widget {
+    display: none;
+  }
+}

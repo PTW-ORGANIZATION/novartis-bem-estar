@@ -1,0 +1,865 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.psoriase-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.psoriase-hero__image {
+  left: 483px;
+  width: calc(100% - 483px);
+  object-position: 50% 50%;
+}
+
+.psoriase-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.psoriase-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.psoriase-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.psoriase-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.psoriase-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.psoriase-overview__text h2,
+.psoriase-signs__inner h2,
+.psoriase-body-parts__inner h2,
+.psoriase-progression__content h2,
+.psoriase-diagnosis__inner h2,
+.psoriase-treatment__inner h2,
+.psoriase-living__content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-overview__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-block: 40px;
+}
+
+.psoriase-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 675px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.psoriase-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psoriase-overview__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.psoriase-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-overview__text sup {
+  font-size: 12px;
+}
+
+.psoriase-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.psoriase-overview__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.psoriase-overview__highlight p {
+  color: var(--color-white) !important;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.psoriase-overview__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.psoriase-signs {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.psoriase-signs__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.psoriase-signs__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-signs__lead sup {
+  font-size: 12px;
+}
+
+.psoriase-signs__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.psoriase-signs__card {
+  flex: 1 1 calc(25% - 8px);
+  min-width: 220px;
+  background: var(--color-blue-bg);
+  border-radius: 8px;
+  padding: 20px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.psoriase-signs__icon {
+  width: 66px;
+  height: 66px;
+  flex: 0 0 auto;
+}
+
+.psoriase-signs__icon-circle {
+  width: 66px;
+  height: 66px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psoriase-signs__icon-circle img {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.psoriase-signs__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.psoriase-signs__note {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-signs__note sup {
+  font-size: 14px;
+}
+
+.psoriase-signs__inner > p:not(.psoriase-signs__lead):not(.psoriase-signs__note) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-signs__inner > p sup {
+  font-size: 12px;
+}
+
+.psoriase-body-parts {
+  padding-block: 40px;
+}
+
+.psoriase-body-parts__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.psoriase-body-parts__inner > p:not(.psoriase-body-parts__note) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-body-parts__note {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-body-parts__note sup {
+  font-size: 14px;
+}
+
+.psoriase-accordion {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.psoriase-accordion--light {
+  background: var(--color-white);
+}
+
+.psoriase-accordion--tinted {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-blue-bg);
+}
+
+.psoriase-accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d8dce8;
+}
+
+.psoriase-accordion__item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.psoriase-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.psoriase-accordion__header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.psoriase-accordion__chevron {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+
+.psoriase-accordion__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.psoriase-accordion__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-accordion__body p strong {
+  color: var(--color-blue-dark);
+  font-weight: 600;
+}
+
+.psoriase-accordion__body sup {
+  font-size: 11px;
+}
+
+.psoriase-highlight-box {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.psoriase-highlight-box__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.psoriase-highlight-box p:not(.psoriase-highlight-box__title) {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+}
+
+.psoriase-highlight-box sup {
+  font-size: 14px;
+}
+
+.psoriase-progression {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.psoriase-progression__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.psoriase-progression__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 678px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.psoriase-progression__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psoriase-progression__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.psoriase-progression__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-progression__lead sup {
+  font-size: 14px;
+}
+
+.psoriase-progression__content > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-progression__content > p sup {
+  font-size: 12px;
+}
+
+.psoriase-progression__content > p strong {
+  font-weight: 700;
+}
+
+.psoriase-progression__list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.psoriase-progression__list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.psoriase-diagnosis {
+  padding-block: 40px;
+}
+
+.psoriase-diagnosis__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.psoriase-diagnosis__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.psoriase-diagnosis__lead sup {
+  font-size: 14px;
+}
+
+.psoriase-diagnosis__inner > p:not(.psoriase-diagnosis__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-diagnosis__inner > p sup {
+  font-size: 12px;
+}
+
+.psoriase-treatment {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.psoriase-treatment__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.psoriase-treatment__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-treatment__lead sup {
+  font-size: 14px;
+}
+
+.psoriase-treatment__inner > p:not(.psoriase-treatment__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-treatment__inner > p sup {
+  font-size: 12px;
+}
+
+.psoriase-treatment__inner > p strong {
+  font-weight: 700;
+}
+
+.psoriase-treatment__row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.psoriase-treatment__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 761px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.psoriase-treatment__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psoriase-living {
+  padding-block: 40px;
+}
+
+.psoriase-living__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.psoriase-living__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.psoriase-living__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-living__lead sup {
+  font-size: 14px;
+}
+
+.psoriase-living__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-living__list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.psoriase-living__list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.psoriase-living__content > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.psoriase-living__content > p sup {
+  font-size: 12px;
+}
+
+.psoriase-living__content > p strong {
+  font-weight: 700;
+}
+
+.psoriase-living__image {
+  flex: 0 0 auto;
+  width: 419px;
+  height: 596px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.psoriase-living__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psoriase-articles {
+  padding-block: 40px;
+}
+
+.psoriase-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.psoriase-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.psoriase-campaign {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 263px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 32px;
+}
+
+.psoriase-campaign__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.psoriase-campaign__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--color-blue) 30%, rgba(4, 96, 169, 0) 62%);
+}
+
+.psoriase-campaign__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 520px;
+}
+
+.psoriase-campaign__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.psoriase-campaign__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.psoriase-campaign__btn {
+  background: var(--color-white);
+  color: var(--color-blue-dark);
+  letter-spacing: -0.18px;
+  padding: 10px 16px;
+  border-radius: 96px;
+}
+
+.psoriase-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.psoriase-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.psoriase-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.psoriase-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.psoriase-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .psoriase-overview__inner,
+  .psoriase-progression__inner,
+  .psoriase-treatment__row,
+  .psoriase-living__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .psoriase-overview__image,
+  .psoriase-progression__image,
+  .psoriase-treatment__image,
+  .psoriase-living__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .psoriase-hero__content {
+    max-width: 100%;
+  }
+
+  .psoriase-campaign {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .psoriase-campaign__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.psoriase-hero {
+    height: auto;
+  }.psoriase-hero__content h1,
+  .psoriase-hero__content p {
+    max-width: 100%;
+  }.psoriase-signs__card {
+    flex-basis: 100%;
+  }.psoriase-accordion {
+    padding: 20px;
+  }
+}

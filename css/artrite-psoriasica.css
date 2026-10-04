@@ -1,0 +1,1075 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.artrite-psoriasica-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.artrite-psoriasica-hero__image {
+  left: 362px;
+  width: calc(100% - 362px);
+  object-position: 50% 19%;
+}
+
+.artrite-psoriasica-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.artrite-psoriasica-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.artrite-psoriasica-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.artrite-psoriasica-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.artrite-psoriasica-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.artrite-psoriasica-overview__inner,
+.artrite-psoriasica-causes__lead,
+.artrite-psoriasica-body-parts__inner,
+.artrite-psoriasica-symptoms__inner,
+.artrite-psoriasica-types__inner,
+.artrite-psoriasica-quality__inner,
+.artrite-psoriasica-stress__inner,
+.artrite-psoriasica-habits__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artrite-psoriasica-overview__inner {
+  gap: 20px;
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-overview__inner h2,
+.artrite-psoriasica-causes__content h2,
+.artrite-psoriasica-body-parts__inner h2,
+.artrite-psoriasica-symptoms__inner h2,
+.artrite-psoriasica-types__inner h2,
+.artrite-psoriasica-quality__inner h2,
+.artrite-psoriasica-stress__inner h2,
+.artrite-psoriasica-habits__content h2,
+.artrite-psoriasica-doctor__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.artrite-psoriasica-overview__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.artrite-psoriasica-overview__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.artrite-psoriasica-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.artrite-psoriasica-overview__text sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.artrite-psoriasica-overview__image {
+  flex: 0 0 auto;
+  width: 468px;
+  height: 266px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.artrite-psoriasica-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artrite-psoriasica-name {
+  padding-block: 20px 40px;
+}
+
+.artrite-psoriasica-name__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.artrite-psoriasica-name-card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.artrite-psoriasica-name-card__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.artrite-psoriasica-name-card__header img {
+  flex: 0 0 auto;
+  width: 49px;
+  height: 49px;
+}
+
+.artrite-psoriasica-name-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.artrite-psoriasica-name-card__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-name-card__text sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-name-card__acronyms {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.artrite-psoriasica-name-card__acronym {
+  background: var(--color-blue-bg);
+  border: 1px solid #e9ecf6;
+  border-radius: 8px;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.artrite-psoriasica-name-card__acronym strong {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.artrite-psoriasica-name-card__highlight {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-causes {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-causes__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.artrite-psoriasica-causes__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 552px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.artrite-psoriasica-causes__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artrite-psoriasica-causes__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.artrite-psoriasica-causes__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-causes__content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-causes__content p sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-causes__content p strong {
+  font-weight: 700;
+}
+
+.artrite-psoriasica-causes__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.artrite-psoriasica-causes__highlight p {
+  color: var(--color-white) !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.artrite-psoriasica-causes__highlight p strong {
+  font-weight: 800;
+}
+
+.artrite-psoriasica-causes__highlight-caps {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.artrite-psoriasica-causes__list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.artrite-psoriasica-causes__list li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.artrite-psoriasica-symptoms {
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-symptoms__inner {
+  gap: 20px;
+}
+
+.artrite-psoriasica-symptoms__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.artrite-psoriasica-symptoms__lead sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-symptoms__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.artrite-psoriasica-symptoms__card {
+  flex: 1 1 350px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.artrite-psoriasica-symptoms__card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.artrite-psoriasica-symptoms__card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-symptoms__card-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.artrite-psoriasica-symptoms__card.is-collapsed .artrite-psoriasica-symptoms__card-icon {
+  transform: rotate(-90deg);
+}
+
+.artrite-psoriasica-symptoms__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.artrite-psoriasica-symptoms__card.is-collapsed .artrite-psoriasica-symptoms__card-text {
+  display: none;
+}
+
+.artrite-psoriasica-symptoms__card-text p,
+.artrite-psoriasica-symptoms__card-text li {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.artrite-psoriasica-symptoms__card-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.artrite-psoriasica-symptoms__card-text li strong {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.artrite-psoriasica-symptoms__card-text sup {
+  font-size: 11px;
+}
+
+.artrite-psoriasica-body-parts {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-body-parts__inner {
+  gap: 20px;
+}
+
+.artrite-psoriasica-body-parts__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-body-parts__lead sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-body-parts__inner > p:not(.artrite-psoriasica-body-parts__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-types {
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-types__inner {
+  gap: 20px;
+}
+
+.artrite-psoriasica-types__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-types__lead sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-types__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.artrite-psoriasica-types__card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.artrite-psoriasica-types__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-types__card-number {
+  margin-right: 4px;
+}
+
+.artrite-psoriasica-types__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-types__card p sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-types__card--info {
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.artrite-psoriasica-types__card--info img {
+  width: 60px;
+  height: 53px;
+}
+
+.artrite-psoriasica-types__card--info p {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+  text-align: center;
+}
+
+.artrite-psoriasica-quality {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-quality__inner {
+  gap: 20px;
+}
+
+.artrite-psoriasica-quality__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-quality__lead sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-quality__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.artrite-psoriasica-quality__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.artrite-psoriasica-quality__text > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-quality__text > p sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-quality__highlight {
+  width: 100%;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.artrite-psoriasica-quality__highlight-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.artrite-psoriasica-quality__highlight-title sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-quality__highlight ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.artrite-psoriasica-quality__highlight li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+}
+
+.artrite-psoriasica-quality__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 498px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.artrite-psoriasica-quality__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artrite-psoriasica-stress {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-stress__inner {
+  gap: 20px;
+}
+
+.artrite-psoriasica-stress__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.artrite-psoriasica-stress__lead sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-stress__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.artrite-psoriasica-stress__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-stress__text sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-stress__text ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.artrite-psoriasica-stress__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.artrite-psoriasica-stress__highlight img {
+  flex: 0 0 auto;
+  width: 153px;
+  height: 148px;
+}
+
+.artrite-psoriasica-stress__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.artrite-psoriasica-stress__highlight-text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.artrite-psoriasica-stress__highlight-text p strong {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.artrite-psoriasica-stress__highlight-text sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-habits {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-habits__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.artrite-psoriasica-habits__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.artrite-psoriasica-habits__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artrite-psoriasica-habits__content {
+  flex: 1 0 0;
+  min-width: 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.artrite-psoriasica-habits__content > p,
+.artrite-psoriasica-habits__content ul {
+  width: 100%;
+}
+
+.artrite-psoriasica-habits__content > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.artrite-psoriasica-habits__content > p sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-habits__content ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.artrite-psoriasica-habits__content li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+}
+
+.artrite-psoriasica-habits__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.artrite-psoriasica-habits__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.artrite-psoriasica-habits__highlight p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.artrite-psoriasica-habits__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.52px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.artrite-psoriasica-habits__highlight sup {
+  font-size: 14px;
+}
+
+.artrite-psoriasica-articles {
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.artrite-psoriasica-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.artrite-psoriasica-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.artrite-psoriasica-doctor {
+  background: var(--color-blue-dark);
+  padding-block: 40px;
+}
+
+.artrite-psoriasica-doctor__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.artrite-psoriasica-doctor__image {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 271px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.artrite-psoriasica-doctor__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artrite-psoriasica-doctor__text {
+  flex: 0 0 auto;
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: var(--color-white);
+}
+
+.artrite-psoriasica-doctor__eyebrow {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 1.2;
+  color: var(--color-yellow);
+  margin: 0;
+}
+
+.artrite-psoriasica-doctor__text h2 {
+  color: var(--color-white);
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.artrite-psoriasica-doctor__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.artrite-psoriasica-doctor__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.artrite-psoriasica-doctor__body sup {
+  font-size: 12px;
+}
+
+.artrite-psoriasica-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.artrite-psoriasica-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.artrite-psoriasica-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.artrite-psoriasica-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.artrite-psoriasica-types__card--info .btn {
+  padding: 9px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .artrite-psoriasica-overview__content,
+  .artrite-psoriasica-causes__inner,
+  .artrite-psoriasica-quality__content,
+  .artrite-psoriasica-habits__inner,
+  .artrite-psoriasica-doctor__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .artrite-psoriasica-overview__image,
+  .artrite-psoriasica-causes__image,
+  .artrite-psoriasica-quality__image,
+  .artrite-psoriasica-habits__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .artrite-psoriasica-doctor__text {
+    width: 100%;
+  }
+
+  .artrite-psoriasica-name__grid {
+    flex-direction: column;
+  }
+
+  .artrite-psoriasica-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.artrite-psoriasica-hero {
+    height: auto;
+  }.artrite-psoriasica-hero__content h1,
+  .artrite-psoriasica-hero__content p {
+    max-width: 100%;
+  }.artrite-psoriasica-symptoms__grid,
+  .artrite-psoriasica-types__grid {
+    flex-direction: column;
+  }.artrite-psoriasica-symptoms__card,
+  .artrite-psoriasica-types__card {
+    flex-basis: auto;
+    width: 100%;
+  }.artrite-psoriasica-stress__highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+}

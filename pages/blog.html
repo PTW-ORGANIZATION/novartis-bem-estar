@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Programa Bem Estar | Novartis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global/base.css">
+  <link rel="stylesheet" href="/css/global/header.css">
+  <link rel="stylesheet" href="/css/global/footer.css">
+  <link rel="stylesheet" href="/css/components/button.css">
+  <link rel="stylesheet" href="/css/components/condition-hero.css">
+  <link rel="stylesheet" href="/css/components/accessibility-widget.css">
+  <link rel="stylesheet" href="/css/components/search-suggestions.css">
+  <link rel="stylesheet" href="/css/components/search-popup.css">
+  <link rel="stylesheet" href="/css/components/utilities.css">
+  <link rel="stylesheet" href="/css/components/related-card.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main>
+    <section class="blog-top">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <a href="/index.html">Home</a>
+          <img src="/assets/icons/breadcrumb-divider.svg">
+          <span class="is-current">Blog</span>
+        </nav>
+
+        <h1 class="section-title">Destaques</h1>
+
+        <div class="featured-grid">
+          <a href="/pages/artigo.html" class="featured-card" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 18%, rgba(0,0,0,0) 91%)">
+            <div class="featured-card__content">
+              <span class="tag tag--dark">Câncer de Próstata</span>
+              <h2>Novembro Azul: conscientização e prevenção</h2>
+              <p>A importância do diagnóstico precoce na prevenção do câncer de próstata.</p>
+            </div>
+            <span class="btn btn--white">
+              Leia o artigo
+              <img src="/assets/icons/arrow-right-blue.svg">
+            </span>
+          </a>
+          <a href="/pages/artigo.html" class="featured-card" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 18%, rgba(0,0,0,0) 91%)">
+            <div class="featured-card__content">
+              <span class="tag tag--dark">AME</span>
+              <h2>Uma gotinha pode salvar vidas</h2>
+              <p>Conheça mais de 50 doenças inclusas no teste do pezinho, incluindo a Atrofia Muscular Espinhal (AME).</p>
+            </div>
+            <span class="btn btn--white">
+              Leia o artigo
+              <img src="/assets/icons/arrow-right-blue.svg">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-articles">
+      <div class="container">
+        <div class="blog-articles__header">
+          <h2 class="blog-subtitle">Artigos</h2>
+          <button type="button" class="filter-trigger" data-filter-trigger>
+            <img src="/assets/icons/filter-alt.svg">
+            Filtrar temas
+          </button>
+        </div>
+
+        <div class="filters" data-filters></div>
+
+        <div class="filter-popup" data-filter-popup>
+          <div class="filter-popup__backdrop" data-filter-popup-dismiss></div>
+          <div class="filter-popup__panel">
+            <div class="filter-popup__header">
+              <p>Filtro de artigos</p>
+              <button type="button" data-filter-popup-dismiss aria-label="Fechar">
+                <img src="/assets/icons/close.svg">
+              </button>
+            </div>
+            <div class="filter-popup__chips" data-filter-popup-chips></div>
+            <div class="filter-popup__actions">
+              <button type="button" class="filter-popup__clear" data-filter-clear>
+                Limpar
+                <img src="/assets/icons/filter-alt-off.svg">
+              </button>
+              <button type="button" class="filter-popup__apply" data-filter-apply>
+                Filtrar
+                <img src="/assets/icons/filter-alt.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="articles-grid-wrap">
+          <div class="articles-grid" data-articles>
+            <div data-article="cancer-de-mama"></div>
+            <div data-article="cancer-de-prostata"></div>
+            <div data-article="ame"></div>
+            <div data-article="c3g"></div>
+            <div data-article="colesterol-alto"></div>
+            <div data-article="esclerose-multipla"></div>
+            <div data-article="hidradenite-supurativa"></div>
+            <div data-article="psoriase"></div>
+            <div data-article="artrite-psoriasica"></div>
+            <div data-article="dor-nas-costas"></div>
+            <div data-article="urticaria"></div>
+          </div>
+          <img class="blog-articles__gradient" src="/assets/images/gradient-fade-bottom.svg">
+        </div>
+
+        <div class="blog-articles__more">
+          <button type="button" class="btn">Ver mais artigos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container blog-popular">
+      <h2 class="blog-subtitle">Mais acessados</h2>
+      <div class="popular-grid">
+        <div data-popular="0"></div>
+        <div data-popular="1"></div>
+        <div data-popular="2"></div>
+      </div>
+    </section>
+
+    <section class="blog-related">
+      <div class="container">
+        <h2 class="blog-subtitle">Leia também</h2>
+        <div class="related-grid">
+          <div data-related="pele-dia-a-dia"></div>
+          <div data-related="doencas-neurologicas-raras"></div>
+          <div data-related="saude-dos-rins"></div>
+          <div data-related="complicacoes-cardiacas"></div>
+          <div data-related="dor-nas-articulacoes"></div>
+          <div data-related="asma-grave-sintomas"></div>
+          <div data-related="doencas-raras-sangue"></div>
+          <div data-related="acompanhamento-oncologico"></div>
+          <div data-related="c3g-doenca-renal-rara"></div>
+          <div data-related="hidradenite-primeiros-sinais"></div>
+        </div>
+
+        <div class="blog-related__more">
+          <button type="button" class="btn">Ver mais artigos</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+  <div data-include="a11y"></div>
+
+  <script src="/js/search-index.js"></script>
+
+  <script src="/js/search-autocomplete.js"></script>
+
+  <script src="/js/search-popup.js"></script>
+
+  <script src="/js/include.js"></script>
+  <script src="/js/blog-articles.js"></script>
+  <script src="/js/related-cards.js"></script>
+  <script src="/js/blog.js"></script>
+</body>
+</html>

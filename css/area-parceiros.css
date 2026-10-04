@@ -1,0 +1,187 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.ap-top {
+  padding-block: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.ap-panel {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.ap-panel__decoration {
+  position: absolute;
+  right: -40px;
+  bottom: -150px;
+  width: 439px;
+  max-width: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ap-panel__header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ap-panel__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ap-panel__text .section-title {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: -0.42px;
+}
+
+.ap-panel__text p {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 326px;
+}
+
+.ap-panel__logo {
+  width: 162px;
+  height: 67px;
+  flex-shrink: 0;
+}
+
+.ap-grid {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ap-card {
+  flex: 1 1 calc(25% - 7.5px);
+  min-width: 220px;
+  min-height: 136px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.ap-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.ap-card span {
+  color: var(--color-blue);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 220px;
+}
+
+@media (max-width: 960px) {
+  .ap-card {
+    flex: 1 1 calc(50% - 5px);
+  }
+
+  .ap-panel {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ap-panel {
+    padding: 100px 20px 32px;
+    gap: 100px;
+    background-image: url("/assets/images/area-parceiros-decoration-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+  }
+
+  .ap-panel__decoration {
+    display: none;
+  }
+
+  .ap-card {
+    flex: 1 1 calc(50% - 5px);
+    min-width: 0;
+  }
+
+  .ap-panel__header {
+    flex-direction: column;
+  }
+
+  .ap-panel__text .section-title {
+    font-size: 30px;
+  }
+
+  .ap-panel__text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .ap-panel__logo {
+    display: none;
+  }
+}

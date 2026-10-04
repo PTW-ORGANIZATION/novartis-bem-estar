@@ -1,0 +1,196 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.am-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-family: "Lato", var(--font-body);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.am-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.am-hero__decor {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  width: 53%;
+  height: 47%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.am-hero__decor img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.am-hero__header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.am-hero__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-white);
+  max-width: 330px;
+}
+
+.am-hero__intro h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.42px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.am-hero__intro p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.am-hero__logo {
+  flex: 0 0 auto;
+  width: 162px;
+}
+
+.am-hero__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.am-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.am-option {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 136px;
+  text-align: center;
+}
+
+.am-option img {
+  width: 48px;
+  height: 48px;
+}
+
+.am-option p {
+  color: var(--color-blue);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 200px;
+}
+
+@media (max-width: 960px) {
+  .am-hero {
+    padding: 40px;
+  }
+
+  .am-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .am-hero {
+    padding: 100px 20px 32px;
+    gap: 100px;
+    background-image: url("/assets/images/area-medica-decorative-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+  }
+
+  .am-hero__decor {
+    display: none;
+  }
+
+  .am-hero__header {
+    flex-direction: column;
+  }
+
+  .am-hero__intro {
+    max-width: 100%;
+  }
+
+  .am-hero__intro h1 {
+    font-size: 30px;
+  }
+
+  .am-hero__intro p {
+    font-size: 14px;
+  }
+
+  .am-hero__logo {
+    display: none;
+  }
+}

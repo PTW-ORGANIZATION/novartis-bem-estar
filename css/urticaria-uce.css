@@ -1,0 +1,1057 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.urticaria-uce-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.urticaria-uce-hero__image {
+  left: 478px;
+  width: calc(100% - 478px);
+  object-position: 50% 21%;
+}
+
+.urticaria-uce-hero__content h1 {
+  max-width: 400px;
+}
+
+.urticaria-uce-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.urticaria-uce-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.urticaria-uce-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.urticaria-uce-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.urticaria-uce-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.urticaria-uce-overview__text h2,
+.urticaria-uce-urticas__inner > h2,
+.urticaria-uce-alergia__inner > h2,
+.urticaria-uce-coceira__inner > h2,
+.urticaria-uce-nervosa__inner > h2,
+.urticaria-uce-qualidade__content h2,
+.urticaria-uce-sintomas__content h2,
+.urticaria-uce-tratamento__inner > h2,
+.urticaria-uce-cuidados__inner > h2,
+.urticaria-uce-cta__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-overview__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-block: 40px;
+}
+
+.urticaria-uce-overview__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.urticaria-uce-overview__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.urticaria-uce-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-overview__text sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.urticaria-uce-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 402px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.urticaria-uce-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urticaria-uce-overview__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.urticaria-uce-overview__highlight p {
+  color: var(--color-yellow);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.urticaria-uce-overview__highlight sup {
+  font-size: 17px;
+}
+
+.urticaria-uce-urticas {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.urticaria-uce-urticas__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-urticas__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.urticaria-uce-urticas-card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-urticas-card__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.urticaria-uce-urticas-card__header img {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 55px;
+}
+
+.urticaria-uce-urticas-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-urticas-card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.urticaria-uce-urticas-card__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-urticas-card__text sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-urticas-card__lead {
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.urticaria-uce-alergia {
+  padding-block: 40px;
+}
+
+.urticaria-uce-alergia__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-alergia__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-alergia__lead sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-alergia__content {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+}
+
+.urticaria-uce-alergia__image {
+  flex: 1 0 0;
+  min-width: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.urticaria-uce-alergia__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urticaria-uce-alergia__cards {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.urticaria-uce-alergia-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-alergia-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.urticaria-uce-alergia-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.urticaria-uce-alergia-card__icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  transform: rotate(90deg);
+}
+
+.urticaria-uce-alergia-card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.urticaria-uce-alergia-card__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-alergia-card__text sup {
+  font-size: 11px;
+}
+
+.urticaria-uce-alergia-card__strong {
+  font-weight: 600 !important;
+  color: var(--color-blue-dark) !important;
+}
+
+.urticaria-uce-coceira {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.urticaria-uce-coceira__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-coceira__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-coceira__lead sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-coceira__inner > p:not(.urticaria-uce-coceira__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-coceira__inner > p sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-coceira__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.urticaria-uce-coceira__highlight img {
+  flex: 0 0 auto;
+  width: 118px;
+  height: 117px;
+}
+
+.urticaria-uce-coceira__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.urticaria-uce-coceira__highlight-text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.urticaria-uce-coceira__highlight-text p strong {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.urticaria-uce-nervosa {
+  padding-block: 40px;
+}
+
+.urticaria-uce-nervosa__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-nervosa__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+}
+
+.urticaria-uce-nervosa__highlight p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.urticaria-uce-nervosa__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.urticaria-uce-nervosa__highlight sup {
+  font-size: 14px;
+}
+
+.urticaria-uce-nervosa__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.urticaria-uce-nervosa__lead sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-nervosa__inner > p:not(.urticaria-uce-nervosa__lead):not(.urticaria-uce-nervosa__strong) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-nervosa__strong {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-nervosa__inner sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-qualidade {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.urticaria-uce-qualidade__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.urticaria-uce-qualidade__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 412px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.urticaria-uce-qualidade__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urticaria-uce-qualidade__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.urticaria-uce-qualidade__content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-qualidade__content p sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-qualidade__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.urticaria-uce-qualidade__lead sup {
+  font-size: 15px !important;
+}
+
+.urticaria-uce-sintomas {
+  padding-block: 40px;
+}
+
+.urticaria-uce-sintomas__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.urticaria-uce-sintomas__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.urticaria-uce-sintomas__lead,
+.urticaria-uce-sintomas__foot {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-sintomas__tools {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.urticaria-uce-sintomas-tool {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+}
+
+.urticaria-uce-sintomas-tool__eyebrow {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.urticaria-uce-sintomas-tool__text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-sintomas-tool__text sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-sintomas__image {
+  flex: 0 0 auto;
+  width: 405px;
+  height: 578px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.urticaria-uce-sintomas__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urticaria-uce-tratamento {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.urticaria-uce-tratamento__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.urticaria-uce-tratamento__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  width: 100%;
+}
+
+.urticaria-uce-tratamento__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-tratamento__lead {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-tratamento__lead sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-tratamento__text > p:not(.urticaria-uce-tratamento__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-tratamento__text sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-tratamento__strong {
+  font-weight: 700 !important;
+}
+
+.urticaria-uce-tratamento__box {
+  flex: 0 0 auto;
+  width: 478px;
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.urticaria-uce-tratamento__box-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.urticaria-uce-tratamento__box-text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-tratamento__box-text sup {
+  font-size: 15px;
+}
+
+.urticaria-uce-tratamento__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.urticaria-uce-tratamento__highlight img {
+  flex: 0 0 auto;
+  width: 130px;
+  height: 142px;
+}
+
+.urticaria-uce-tratamento__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.urticaria-uce-tratamento__highlight-text h3 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.urticaria-uce-tratamento__highlight-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.urticaria-uce-tratamento__highlight-strong {
+  font-weight: 600 !important;
+}
+
+.urticaria-uce-tratamento__highlight-text sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-cuidados {
+  padding-block: 40px;
+}
+
+.urticaria-uce-cuidados__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-cuidados__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.urticaria-uce-cuidados-card {
+  flex: 1 1 350px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-cuidados-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.urticaria-uce-cuidados-card__number {
+  margin-right: 4px;
+}
+
+.urticaria-uce-cuidados-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.urticaria-uce-cuidados-card p sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-cuidados-card--half {
+  flex-basis: 560px;
+}
+
+.urticaria-uce-cta {
+  background: var(--color-blue-dark);
+  padding-block: 40px;
+}
+
+.urticaria-uce-cta__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.urticaria-uce-cta__image {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 340px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.urticaria-uce-cta__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urticaria-uce-cta__text {
+  flex: 0 0 auto;
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: var(--color-white);
+}
+
+.urticaria-uce-cta__eyebrow {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 1.2;
+  color: var(--color-yellow);
+  margin: 0;
+}
+
+.urticaria-uce-cta__text h2 {
+  color: var(--color-white);
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.urticaria-uce-cta__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.urticaria-uce-cta__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.urticaria-uce-cta__body sup {
+  font-size: 12px;
+}
+
+.urticaria-uce-articles {
+  padding-block: 40px;
+}
+
+.urticaria-uce-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.urticaria-uce-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.urticaria-uce-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.urticaria-uce-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.urticaria-uce-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.urticaria-uce-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.urticaria-uce-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .urticaria-uce-overview__content,
+  .urticaria-uce-alergia__content,
+  .urticaria-uce-qualidade__inner,
+  .urticaria-uce-sintomas__inner,
+  .urticaria-uce-tratamento__content,
+  .urticaria-uce-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .urticaria-uce-overview__image,
+  .urticaria-uce-qualidade__image,
+  .urticaria-uce-sintomas__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .urticaria-uce-alergia__image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .urticaria-uce-alergia__cards {
+    width: 100%;
+  }
+
+  .urticaria-uce-tratamento__box {
+    width: 100%;
+  }
+
+  .urticaria-uce-cta__text {
+    width: 100%;
+  }
+
+  .urticaria-uce-urticas__grid {
+    flex-direction: column;
+  }
+
+  .urticaria-uce-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.urticaria-uce-hero {
+    height: auto;
+  }.urticaria-uce-hero__content h1,
+  .urticaria-uce-hero__content p {
+    max-width: 100%;
+  }.urticaria-uce-cuidados-card,
+  .urticaria-uce-cuidados-card--half {
+    flex-basis: 100%;
+  }.urticaria-uce-coceira__highlight,
+  .urticaria-uce-tratamento__highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+}

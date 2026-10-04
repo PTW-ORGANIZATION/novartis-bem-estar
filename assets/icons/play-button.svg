@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="85" height="84" viewBox="0 0 85 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-4" y="-4" width="93" height="92"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_0_99_clip_path);height:100%;width:100%"></div></foreignObject><g id="Play Button Container" data-figma-bg-blur-radius="4">
+<rect x="0.5" y="0.5" width="84" height="83" rx="41.5" fill="white" fill-opacity="0.1"/>
+<rect x="0.5" y="0.5" width="84" height="83" rx="41.5" stroke="#F3F5FB"/>
+<path id="Polygon 2" d="M64.8661 38.2985C67.5681 39.8311 67.5681 43.7244 64.8661 45.257L34.2235 62.6382C31.557 64.1507 28.25 62.2246 28.25 59.1589L28.25 24.3966C28.25 21.331 31.557 19.4048 34.2235 20.9174L64.8661 38.2985Z" fill="#F3F5FB"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_0_99_clip_path" transform="translate(4 4)"><rect x="0.5" y="0.5" width="84" height="83" rx="41.5"/>
+</clipPath></defs>
+</svg>

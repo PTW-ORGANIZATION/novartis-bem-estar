@@ -1,0 +1,268 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.reumatologia-top {
+  padding-block: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.reumatologia-banner__image {
+  object-position: 50% 80%;
+  transform: scale(1.12);
+  transform-origin: 65% 50%;
+}
+
+.reumatologia-banner__content {
+  max-width: 473px;
+}
+
+.reumatologia-banner__content p {
+  max-width: 393px;
+}
+
+.reumatologia-banner__content p strong {
+  font-weight: 700;
+}
+
+.reumatologia-intro {
+  background: var(--color-white);
+  padding-block: 32px;
+}
+
+.reumatologia-intro__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reumatologia-intro__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.reumatologia-intro__lead {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+}
+
+.reumatologia-intro__lead sup {
+  font-size: 14px;
+}
+
+.reumatologia-intro__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.reumatologia-body {
+  padding-block: 32px;
+}
+
+.reumatologia-body__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reumatologia-conditions,
+.reumatologia-campaigns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reumatologia-conditions h2,
+.reumatologia-campaigns h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.condition-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.condition-item {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.condition-item img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.condition-item span {
+  color: var(--color-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.campaign-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px 10px;
+}
+
+.campaign-grid .campaign-card {
+  width: 373px;
+}
+
+.reumatologia-references {
+  background: var(--color-white);
+  padding-block: 32px;
+}
+
+.reumatologia-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  word-break: break-all;
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .condition-grid {
+    flex-wrap: wrap;
+  }
+
+  .condition-item {
+    flex: 1 1 calc(50% - 5px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container.reumatologia-top,
+  .reumatologia-intro .container,
+  .reumatologia-body .container,
+  .reumatologia-references .container {
+    padding-inline: 18px;
+  }
+
+  .reumatologia-banner {
+    height: auto;
+    aspect-ratio: 354 / 338;
+  }
+
+  .reumatologia-banner::after {
+    background: linear-gradient(to top, rgba(24, 110, 176, 0.8) 37%, rgba(94, 164, 218, 0) 83%);
+  }
+
+  .reumatologia-banner__image {
+    inset: auto;
+    top: -90.24%;
+    left: -74.17%;
+    width: 272.32%;
+    height: 190.24%;
+    max-width: none;
+    object-fit: unset;
+    object-position: unset;
+    transform: none;
+  }
+
+  .reumatologia-banner__content {
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .reumatologia-banner__content h1 {
+    font-size: 30px;
+  }
+
+  .reumatologia-banner__content p {
+    max-width: 100%;
+  }
+
+  .condition-item {
+    flex: 1 1 100%;
+  }
+
+  .condition-item span {
+    white-space: normal;
+  }
+
+  .campaign-grid .campaign-card,
+  .campaign-card--cta {
+    width: 100%;
+  }
+}

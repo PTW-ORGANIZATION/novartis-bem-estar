@@ -1,0 +1,1559 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.cancer-de-mama-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.cancer-de-mama-hero__image-wrap {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 62%;
+  height: 100%;
+}
+
+.cancer-de-mama-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 41.93%;
+  height: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  color: var(--color-white);
+}
+
+.cancer-de-mama-hero__eyebrow {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+}
+
+.cancer-de-mama-hero__content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.42px;
+  line-height: 1;
+  margin: 0;
+  max-width: 340px;
+}
+
+.cancer-de-mama-hero__content p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.16px;
+  line-height: 1.4;
+  max-width: 420px;
+}
+
+.cancer-de-mama-subnav {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.cancer-de-mama-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+  padding-top: 8px;
+}
+
+.cancer-de-mama-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.cancer-de-mama-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.cancer-de-mama-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.cancer-de-mama-overview__inner,
+.cancer-de-mama-stats__inner,
+.cancer-de-mama-factors__inner,
+.cancer-de-mama-symptoms__inner,
+.cancer-de-mama-types__inner,
+.cancer-de-mama-receptors__inner,
+.cancer-de-mama-diagnosis__inner,
+.cancer-de-mama-biopsy__inner,
+.cancer-de-mama-molecular__text,
+.cancer-de-mama-genetic__inner,
+.cancer-de-mama-biomarkers__inner,
+.cancer-de-mama-treatment__inner,
+.cancer-de-mama-care__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cancer-de-mama-overview__inner h2,
+.cancer-de-mama-stats__inner h2,
+.cancer-de-mama-factors__inner h2,
+.cancer-de-mama-symptoms__inner h2,
+.cancer-de-mama-types__inner h2,
+.cancer-de-mama-receptors__inner h2,
+.cancer-de-mama-diagnosis__text h2,
+.cancer-de-mama-biopsy__inner h2,
+.cancer-de-mama-staging__text h2,
+.cancer-de-mama-molecular__text h2,
+.cancer-de-mama-genetic__inner h2,
+.cancer-de-mama-biomarkers__inner h2,
+.cancer-de-mama-treatment__inner h2,
+.cancer-de-mama-care__text h2,
+.cancer-de-mama-doctor__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-overview__inner {
+  gap: 40px;
+  flex-direction: row;
+  align-items: center;
+  padding-block: 40px;
+}
+
+.cancer-de-mama-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 489px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-overview__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-overview__text sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.cancer-de-mama-stats {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-stats__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-stats__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-stats__lead sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-stats__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-mama-stats__card {
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.cancer-de-mama-stats__card-number {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cancer-de-mama-stats__card-number sup {
+  font-size: 20px;
+}
+
+.cancer-de-mama-stats__card-label {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-factors {
+  padding-block: 40px;
+}
+
+.cancer-de-mama-factors__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-factors__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-factors__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-factors__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-factors__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-mama-factors__card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-factors__card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cancer-de-mama-factors__card-header img {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.cancer-de-mama-factors__card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-factors__card ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cancer-de-mama-factors__card li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.cancer-de-mama-factors__card li sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-factors__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.cancer-de-mama-factors__footer p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-factors__footer sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-symptoms__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-symptoms__content {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+}
+
+.cancer-de-mama-symptoms__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-symptoms__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-symptoms__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-symptoms__list-label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-symptoms__list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.cancer-de-mama-symptoms__list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-mama-symptoms__list li sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-symptoms__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cancer-de-mama-symptoms__highlight-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--color-yellow);
+  margin: 0;
+}
+
+.cancer-de-mama-symptoms__highlight-title sup {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.cancer-de-mama-symptoms__highlight p:not(.cancer-de-mama-symptoms__highlight-title) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.cancer-de-mama-symptoms__image {
+  flex: 0 0 auto;
+  width: 430px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-symptoms__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-types {
+  padding-block: 40px;
+}
+
+.cancer-de-mama-types__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-types__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-types__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-types__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-types__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-mama-types__card {
+  flex: 1 1 350px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-types__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-mama-types__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-types__card p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-types__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cancer-de-mama-types__highlight img {
+  flex: 0 0 auto;
+  width: 153px;
+  height: 154px;
+}
+
+.cancer-de-mama-types__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cancer-de-mama-types__highlight-text p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.cancer-de-mama-types__highlight-text sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-receptors {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-receptors__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-receptors__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-receptors__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-receptors__inner p:not(.cancer-de-mama-receptors__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-receptors__inner p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-diagnosis {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-diagnosis__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-diagnosis__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.cancer-de-mama-diagnosis__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 348px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-diagnosis__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-diagnosis__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-diagnosis__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-diagnosis__text ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cancer-de-mama-diagnosis__text li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.cancer-de-mama-diagnosis__text sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-diagnosis__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.cancer-de-mama-accordion {
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-mama-accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cancer-de-mama-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cancer-de-mama-accordion__item.is-collapsed .cancer-de-mama-accordion__body {
+  display: none;
+}
+
+.cancer-de-mama-accordion__header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-mama-accordion__header h3 sup {
+  font-size: 11px;
+}
+
+.cancer-de-mama-accordion__chevron {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.cancer-de-mama-accordion__item.is-collapsed .cancer-de-mama-accordion__chevron {
+  transform: rotate(-90deg);
+}
+
+.cancer-de-mama-accordion__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cancer-de-mama-accordion__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-accordion__body sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-accordion__divider {
+  height: 1px;
+  background: #e1e4eb;
+  width: 100%;
+}
+
+.cancer-de-mama-biopsy {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-biopsy__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-biopsy__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-biopsy__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-biopsy__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-biopsy__columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.cancer-de-mama-biopsy__columns ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cancer-de-mama-biopsy__columns li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-mama-biopsy__columns li sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-biopsy__footer {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-staging {
+  padding-block: 40px;
+}
+
+.cancer-de-mama-staging__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.cancer-de-mama-staging__image {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 539px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-staging__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 67.5% 50%;
+}
+
+.cancer-de-mama-staging__text {
+  flex: 0 0 auto;
+  width: 639px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.cancer-de-mama-staging__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-staging__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-staging__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-staging__tnm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.cancer-de-mama-staging__tnm p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-staging__tnm strong {
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.cancer-de-mama-staging__tnm sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-staging__text > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-staging__text > p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-molecular {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-molecular__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cancer-de-mama-molecular__text {
+  flex: 1 0 0;
+  min-width: 0;
+  gap: 20px;
+}
+
+.cancer-de-mama-molecular__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-molecular__text p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-molecular__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.cancer-de-mama-molecular__image {
+  flex: 0 0 auto;
+  width: 419px;
+  height: 448px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-molecular__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-genetic {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-genetic__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-genetic__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-genetic__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-genetic__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-genetic__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-mama-genetic__card {
+  flex: 1 1 350px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-genetic__card img {
+  width: 66px;
+  height: 66px;
+}
+
+.cancer-de-mama-genetic__icon-circle {
+  flex: 0 0 auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cancer-de-mama-genetic__icon-circle img {
+  width: 46px;
+  height: 46px;
+}
+
+.cancer-de-mama-genetic__card p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-mama-genetic__card p sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-biomarkers {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-biomarkers__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-biomarkers__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-biomarkers__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-biomarkers__inner > p:not(.cancer-de-mama-biomarkers__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-biomarkers__inner > p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-biomarkers__terms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cancer-de-mama-biomarkers__terms p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-biomarkers__terms strong {
+  color: var(--color-blue);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cancer-de-mama-biomarkers__terms sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-treatment {
+  padding-block: 40px;
+}
+
+.cancer-de-mama-treatment__inner {
+  gap: 20px;
+}
+
+.cancer-de-mama-treatment__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-treatment__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-treatment__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-treatment__footer {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-treatment__footer strong {
+  font-weight: 700;
+  color: var(--color-blue-dark);
+}
+
+.cancer-de-mama-care {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-care__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.cancer-de-mama-care__text {
+  flex: 1 0 0;
+  min-width: 0;
+  gap: 20px;
+}
+
+.cancer-de-mama-care__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-mama-care__lead sup {
+  font-size: 14px;
+}
+
+.cancer-de-mama-care__list-label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-care__text ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cancer-de-mama-care__text li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-mama-care__text li sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-care__text > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-mama-care__text > p sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-care__image {
+  flex: 0 0 auto;
+  width: 461px;
+  height: 670px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-care__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 32% 50%;
+}
+
+.cancer-de-mama-doctor {
+  background: var(--color-blue-dark);
+  padding-block: 40px;
+}
+
+.cancer-de-mama-doctor__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cancer-de-mama-doctor__image {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 340px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cancer-de-mama-doctor__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 17% 50%;
+}
+
+.cancer-de-mama-doctor__text {
+  flex: 0 0 auto;
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  color: var(--color-white);
+}
+
+.cancer-de-mama-doctor__eyebrow {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 1.2;
+  color: var(--color-yellow);
+  margin: 0;
+}
+
+.cancer-de-mama-doctor__text h2 {
+  color: var(--color-white);
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.cancer-de-mama-doctor__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.cancer-de-mama-doctor__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.cancer-de-mama-doctor__body sup {
+  font-size: 12px;
+}
+
+.cancer-de-mama-articles {
+  padding-block: 40px;
+}
+
+.cancer-de-mama-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-mama-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 40px 0 0;
+}
+
+.cancer-de-mama-campaign {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #471460;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  min-height: 263px;
+}
+
+.cancer-de-mama-campaign__image-wrap {
+  position: absolute;
+  top: 0;
+  left: 20.78%;
+  width: 100.21%;
+  height: 100%;
+}
+
+.cancer-de-mama-campaign__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-mama-campaign::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--color-blue) 22%, rgba(4, 96, 169, 0) 54%);
+}
+
+.cancer-de-mama-campaign__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 615px;
+  max-width: 100%;
+}
+
+.cancer-de-mama-campaign__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+}
+
+.cancer-de-mama-campaign__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+}
+
+.cancer-de-mama-campaign__btn {
+  background: var(--color-white);
+  color: var(--color-blue-dark);
+  letter-spacing: -0.18px;
+  padding: 8px 12px;
+  border-radius: 96px;
+}
+
+.cancer-de-mama-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cancer-de-mama-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.cancer-de-mama-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.cancer-de-mama-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.cancer-de-mama-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .cancer-de-mama-overview__inner,
+  .cancer-de-mama-symptoms__content,
+  .cancer-de-mama-diagnosis__content,
+  .cancer-de-mama-staging__inner,
+  .cancer-de-mama-molecular__inner,
+  .cancer-de-mama-care__inner,
+  .cancer-de-mama-doctor__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cancer-de-mama-overview__image,
+  .cancer-de-mama-symptoms__image,
+  .cancer-de-mama-diagnosis__image,
+  .cancer-de-mama-staging__image,
+  .cancer-de-mama-molecular__image,
+  .cancer-de-mama-care__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .cancer-de-mama-staging__text,
+  .cancer-de-mama-doctor__text {
+    width: 100%;
+  }
+
+  .cancer-de-mama-factors__grid,
+  .cancer-de-mama-stats__grid,
+  .cancer-de-mama-types__grid,
+  .cancer-de-mama-genetic__grid,
+  .cancer-de-mama-biopsy__columns {
+    flex-direction: column;
+  }
+
+  .cancer-de-mama-stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cancer-de-mama-hero__content {
+    max-width: 100%;
+  }
+
+  .cancer-de-mama-campaign {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {.cancer-de-mama-hero {
+    height: auto;
+  }.cancer-de-mama-hero__content h1,
+  .cancer-de-mama-hero__content p {
+    max-width: 100%;
+  }.cancer-de-mama-types__grid,
+  .cancer-de-mama-genetic__grid {
+    flex-direction: column;
+  }.cancer-de-mama-types__card,
+  .cancer-de-mama-genetic__card {
+    flex-basis: auto;
+    width: 100%;
+  }.cancer-de-mama-types__highlight {
+    flex-direction: column;
+    text-align: center;
+  }.cancer-de-mama-accordion__header h3 {
+    font-size: 16px;
+  }
+}

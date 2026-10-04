@@ -1,0 +1,264 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.hematologia-top {
+  padding-block: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.hematologia-banner__image {
+  object-position: 50% 30%;
+}
+
+.hematologia-banner__content {
+  max-width: 453px;
+}
+
+.hematologia-banner__content p {
+  max-width: 373px;
+}
+
+.hematologia-banner__content p strong {
+  font-weight: 700;
+}
+
+.hematologia-intro {
+  background: var(--color-white);
+  padding-block: 32px;
+}
+
+.hematologia-intro__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hematologia-intro__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.hematologia-intro__lead {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+}
+
+.hematologia-intro__lead sup {
+  font-size: 14px;
+}
+
+.hematologia-intro__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.hematologia-body {
+  padding-block: 32px;
+}
+
+.hematologia-body__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hematologia-conditions,
+.hematologia-campaigns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hematologia-conditions h2,
+.hematologia-campaigns h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.condition-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.condition-item {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.condition-item img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.condition-item span {
+  color: var(--color-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.campaign-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px 10px;
+}
+
+.campaign-grid .campaign-card {
+  width: 373px;
+}
+
+.hematologia-references {
+  background: var(--color-white);
+  padding-block: 32px;
+}
+
+.hematologia-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  word-break: break-all;
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .condition-grid {
+    flex-wrap: wrap;
+  }
+
+  .condition-item {
+    flex: 1 1 calc(50% - 5px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container.hematologia-top,
+  .hematologia-intro .container,
+  .hematologia-body .container,
+  .hematologia-references .container {
+    padding-inline: 18px;
+  }
+
+  .hematologia-banner {
+    height: auto;
+    aspect-ratio: 354 / 338;
+  }
+
+  .hematologia-banner::after {
+    background: linear-gradient(to top, rgba(24, 110, 176, 0.8) 37%, rgba(94, 164, 218, 0) 83%);
+  }
+
+  .hematologia-banner__image {
+    inset: auto;
+    top: -31.07%;
+    left: -133.92%;
+    width: 358.45%;
+    height: 131.07%;
+    max-width: none;
+    object-fit: unset;
+    object-position: unset;
+  }
+
+  .hematologia-banner__content {
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .hematologia-banner__content h1 {
+    font-size: 30px;
+  }
+
+  .hematologia-banner__content p {
+    max-width: 100%;
+  }
+
+  .condition-item {
+    flex: 1 1 100%;
+  }
+
+  .condition-item span {
+    white-space: normal;
+  }
+
+  .campaign-grid .campaign-card,
+  .campaign-card--cta {
+    width: 100%;
+  }
+}

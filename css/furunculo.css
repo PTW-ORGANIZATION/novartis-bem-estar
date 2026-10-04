@@ -1,0 +1,592 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.furunculo-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.furunculo-hero__image {
+  left: 482px;
+  width: calc(100% - 482px);
+  object-position: 50% 37%;
+}
+
+.furunculo-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.furunculo-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.furunculo-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.furunculo-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.furunculo-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.furunculo-overview {
+  padding-block: 40px;
+}
+
+.furunculo-overview__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.furunculo-overview__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.furunculo-overview__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.furunculo-overview__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.furunculo-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.furunculo-overview__text sup {
+  font-size: 12px;
+}
+
+.furunculo-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.furunculo-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 371px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.furunculo-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.furunculo-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.furunculo-symptoms__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.furunculo-symptoms__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-symptoms__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.furunculo-symptoms__lead sup {
+  font-size: 14px;
+}
+
+.furunculo-symptoms__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.furunculo-symptoms__text sup {
+  font-size: 12px;
+}
+
+.furunculo-symptoms__subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-symptoms__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.furunculo-symptoms__card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-blue-bg);
+  border-radius: 8px;
+  padding: 20px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.furunculo-symptoms__card-icon {
+  flex: 0 0 auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 84px;
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.furunculo-symptoms__card-icon img {
+  width: 60%;
+  height: 60%;
+}
+
+.furunculo-symptoms__card p {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-blue);
+  text-align: center;
+  margin: 0;
+}
+
+.furunculo-symptoms__card p sup {
+  font-size: 14px;
+}
+
+.furunculo-classifications {
+  padding-block: 40px;
+}
+
+.furunculo-classifications__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.furunculo-classifications__inner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-classifications__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.furunculo-classifications__card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.furunculo-classifications__card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.furunculo-classifications__card-header img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.furunculo-classifications__card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-classifications__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.furunculo-classifications__card p sup {
+  font-size: 12px;
+}
+
+.furunculo-treatment {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.furunculo-treatment__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.furunculo-treatment__image {
+  flex: 0 0 auto;
+  width: 502px;
+  height: 259px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.furunculo-treatment__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.furunculo-treatment__content {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.furunculo-treatment__content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-treatment__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-treatment__content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.furunculo-treatment__content p strong {
+  font-weight: 700;
+}
+
+.furunculo-treatment__content p sup {
+  font-size: 12px;
+}
+
+.furunculo-articles {
+  padding-block: 40px;
+}
+
+.furunculo-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.furunculo-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.furunculo-campaign {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e5d8cc;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+.furunculo-campaign::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #0460a9 22.588%, rgba(4, 96, 169, 0) 64.912%);
+}
+
+.furunculo-campaign__image {
+  position: absolute;
+  top: 4.24%;
+  left: 61.48%;
+  width: 29%;
+  height: 91.51%;
+  object-fit: contain;
+}
+
+.furunculo-campaign__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 634px;
+}
+
+.furunculo-campaign__content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.furunculo-campaign__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.btn--white {
+  background: var(--color-white);
+  color: var(--color-blue-dark);
+  padding: 8px 20px;
+  font-size: 16px;
+}
+
+.furunculo-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.furunculo-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.furunculo-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.furunculo-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.furunculo-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .furunculo-overview__content,
+  .furunculo-treatment__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .furunculo-overview__image,
+  .furunculo-treatment__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .furunculo-classifications__grid {
+    flex-direction: column;
+  }
+
+  .furunculo-hero__content {
+    max-width: 100%;
+  }
+
+  .furunculo-campaign {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .furunculo-campaign::before {
+    background: linear-gradient(180deg, #0460a9 40%, rgba(4, 96, 169, 0) 85%);
+  }
+
+  .furunculo-campaign__image {
+    position: static;
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .furunculo-campaign__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.furunculo-hero {
+    height: auto;
+  }.furunculo-hero__content h1,
+  .furunculo-hero__content p {
+    max-width: 100%;
+  }.furunculo-symptoms__grid {
+    flex-direction: column;
+  }
+}

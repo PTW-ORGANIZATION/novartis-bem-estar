@@ -1,0 +1,15 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-blue);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.64px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}

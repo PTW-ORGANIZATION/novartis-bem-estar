@@ -1,0 +1,1164 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.asma-grave-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.asma-grave-hero__image {
+  left: 411px;
+  width: calc(100% - 411px);
+  object-position: 50% 42%;
+}
+
+.asma-grave-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.asma-grave-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.asma-grave-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.asma-grave-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.asma-grave-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.asma-grave-overview__inner,
+.asma-grave-symptoms__inner,
+.asma-grave-compare__inner,
+.asma-grave-types__inner,
+.asma-grave-allergic__inner,
+.asma-grave-severity__inner,
+.asma-grave-control__inner,
+.asma-grave-treatment__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.asma-grave-overview__inner h2,
+.asma-grave-symptoms__inner h2,
+.asma-grave-compare__inner h2,
+.asma-grave-types__inner h2,
+.asma-grave-allergic__inner h2,
+.asma-grave-severity__inner h2,
+.asma-grave-control__inner h2,
+.asma-grave-treatment__content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-overview {
+  padding-block: 40px;
+}
+
+.asma-grave-overview__inner {
+  gap: 0;
+}
+
+.asma-grave-overview__content,
+.asma-grave-overview__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.asma-grave-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 595px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.asma-grave-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asma-grave-overview__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.asma-grave-overview__text h2 {
+  width: 100%;
+}
+
+.asma-grave-overview__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.asma-grave-overview__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.asma-grave-overview__body p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-overview__body sup {
+  font-size: 12px;
+}
+
+.asma-grave-overview__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.asma-grave-overview__highlight p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.asma-grave-overview__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.asma-grave-overview__highlight sup {
+  font-size: 14px;
+}
+
+.asma-grave-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.asma-grave-symptoms__inner {
+  gap: 20px;
+}
+
+.asma-grave-symptoms__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-symptoms__lead strong {
+  font-weight: 700;
+}
+
+.asma-grave-symptoms__lead sup {
+  font-size: 12px;
+}
+
+.asma-grave-symptoms__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.asma-grave-symptoms__item {
+  flex: 1 1 220px;
+  background: var(--color-blue-bg);
+  border-radius: 8px;
+  padding: 20px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.asma-grave-symptoms__icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.asma-grave-symptoms__icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.asma-grave-symptoms__item p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  text-align: center;
+  margin: 0;
+}
+
+.asma-grave-symptoms__note {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+  width: 100%;
+}
+
+.asma-grave-symptoms__note sup {
+  font-size: 12px;
+}
+
+.asma-grave-symptoms__callout {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+  width: 100%;
+}
+
+.asma-grave-symptoms__callout sup {
+  font-size: 14px;
+}
+
+.asma-grave-compare {
+  padding-block: 40px;
+}
+
+.asma-grave-compare__inner {
+  gap: 20px;
+}
+
+.asma-grave-compare__lead {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-compare__lead strong {
+  font-weight: 700;
+}
+
+.asma-grave-compare__grid {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.asma-grave-compare__card {
+  flex: 1 0 0;
+  min-width: 0;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.asma-grave-compare__card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.asma-grave-compare__card-header img {
+  flex: 0 0 auto;
+  height: 58px;
+  width: auto;
+}
+
+.asma-grave-compare__card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-compare__card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-compare__card-highlight {
+  color: var(--color-blue) !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+}
+
+.asma-grave-compare__card sup {
+  font-size: 12px;
+}
+
+.asma-grave-types {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.asma-grave-types__inner {
+  gap: 20px;
+}
+
+.asma-grave-types__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-types__lead sup {
+  font-size: 14px;
+}
+
+.asma-grave-types__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.asma-grave-types__card {
+  flex: 1 1 550px;
+  background: var(--color-blue-bg);
+  border: 1px solid #e9ecf6;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.asma-grave-types__card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.asma-grave-types__card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.asma-grave-types__card-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.asma-grave-types__card.is-collapsed .asma-grave-types__card-icon {
+  transform: rotate(-90deg);
+}
+
+.asma-grave-types__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asma-grave-types__card.is-collapsed .asma-grave-types__card-text {
+  display: none;
+}
+
+.asma-grave-types__card-text p,
+.asma-grave-types__card-text li {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.asma-grave-types__card-text-strong {
+  color: var(--color-blue-dark) !important;
+  font-weight: 600 !important;
+}
+
+.asma-grave-types__card-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.asma-grave-types__card-text li {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.asma-grave-types__card-text sup {
+  font-size: 11px;
+}
+
+.asma-grave-types__banner {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.asma-grave-types__banner img {
+  flex: 0 0 auto;
+  width: 131px;
+  height: 154px;
+}
+
+.asma-grave-types__banner-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asma-grave-types__banner-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.asma-grave-types__banner-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: var(--color-yellow) !important;
+}
+
+.asma-grave-types__banner-text sup {
+  font-size: 12px;
+}
+
+.asma-grave-allergic {
+  padding-block: 40px;
+}
+
+.asma-grave-allergic__inner {
+  gap: 20px;
+}
+
+.asma-grave-allergic__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.asma-grave-allergic__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.asma-grave-allergic__list p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0 0 20px;
+}
+
+.asma-grave-allergic__list sup {
+  font-size: 12px;
+}
+
+.asma-grave-allergic__list ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.asma-grave-allergic__list li {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.asma-grave-allergic__box {
+  width: 100%;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.asma-grave-allergic__box-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-allergic__box-title sup {
+  font-size: 14px;
+}
+
+.asma-grave-allergic__box-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.asma-grave-allergic__box-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asma-grave-allergic__box-col h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.asma-grave-allergic__box-col p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-allergic__box-col p em {
+  font-style: italic;
+}
+
+.asma-grave-allergic__box-col sup {
+  font-size: 12px;
+}
+
+.asma-grave-allergic__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 577px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.asma-grave-allergic__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asma-grave-allergic__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.asma-grave-allergic__footer p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-allergic__footer sup {
+  font-size: 12px;
+}
+
+.asma-grave-severity {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.asma-grave-severity__inner {
+  gap: 20px;
+}
+
+.asma-grave-severity__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-severity__lead sup {
+  font-size: 14px;
+}
+
+.asma-grave-severity__label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-severity__label strong {
+  font-weight: 700;
+}
+
+.asma-grave-severity__label sup {
+  font-size: 12px;
+}
+
+.asma-grave-severity__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.asma-grave-severity__card {
+  flex: 1 1 350px;
+  background: var(--color-blue-bg);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.asma-grave-severity__card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.asma-grave-severity__signal {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 3px;
+  padding-bottom: 8px;
+}
+
+.asma-grave-severity__signal i {
+  display: block;
+  width: 5px;
+  border: 1px solid var(--color-blue-light);
+  border-radius: 10px;
+  background: transparent;
+}
+
+.asma-grave-severity__signal i:nth-child(1) {
+  height: 7px;
+}
+
+.asma-grave-severity__signal i:nth-child(2) {
+  height: 13px;
+}
+
+.asma-grave-severity__signal i:nth-child(3) {
+  height: 20px;
+}
+
+.asma-grave-severity__signal i.is-filled {
+  background: var(--color-blue-light);
+}
+
+.asma-grave-severity__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.asma-grave-severity__card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+  letter-spacing: -0.16px;
+}
+
+.asma-grave-severity__card sup {
+  font-size: 11px;
+}
+
+.asma-grave-control {
+  padding-block: 40px;
+}
+
+.asma-grave-control__inner {
+  gap: 20px;
+}
+
+.asma-grave-control__inner > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+  width: 100%;
+}
+
+.asma-grave-control__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue-dark) !important;
+}
+
+.asma-grave-control__inner sup {
+  font-size: 12px;
+}
+
+.asma-grave-control__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.asma-grave-control__questions {
+  flex: 0 0 auto;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 457px;
+}
+
+.asma-grave-control__questions p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.asma-grave-control__answer {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.asma-grave-control__answer p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-control__answer p strong {
+  font-weight: 700;
+}
+
+.asma-grave-control__answer ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.asma-grave-control__answer li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.asma-grave-control__banner {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.asma-grave-control__banner img {
+  flex: 0 0 auto;
+  width: 78px;
+  height: 88px;
+}
+
+.asma-grave-control__banner p {
+  flex: 1 0 0;
+  min-width: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.asma-grave-control__banner sup {
+  font-size: 14px;
+}
+
+.asma-grave-treatment {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.asma-grave-treatment__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.asma-grave-treatment__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 735px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.asma-grave-treatment__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asma-grave-treatment__content {
+  flex: 1 0 0;
+  min-width: 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.asma-grave-treatment__content > p,
+.asma-grave-treatment__content ul {
+  width: 100%;
+}
+
+.asma-grave-treatment__content > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.asma-grave-treatment__content > p strong {
+  font-weight: 700;
+}
+
+.asma-grave-treatment__content > p sup {
+  font-size: 12px;
+}
+
+.asma-grave-treatment__content ul {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.asma-grave-treatment__content li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+}
+
+.asma-grave-treatment__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+}
+
+.asma-grave-treatment__highlight p {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.asma-grave-treatment__highlight p strong {
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.26px;
+  text-transform: uppercase;
+}
+
+.asma-grave-treatment__highlight sup {
+  font-size: 14px;
+}
+
+.asma-grave-articles {
+  padding-block: 40px;
+}
+
+.asma-grave-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.asma-grave-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.asma-grave-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.asma-grave-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.asma-grave-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.asma-grave-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.asma-grave-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .asma-grave-overview__inner,
+  .asma-grave-allergic__content,
+  .asma-grave-control__content,
+  .asma-grave-treatment__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .asma-grave-overview__image,
+  .asma-grave-allergic__image,
+  .asma-grave-treatment__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .asma-grave-control__questions {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .asma-grave-compare__grid {
+    flex-direction: column;
+  }
+
+  .asma-grave-hero__content {
+    max-width: 100%;
+  }
+
+  .asma-grave-types__banner,
+  .asma-grave-control__banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {.asma-grave-hero {
+    height: auto;
+  }.asma-grave-hero__content h1,
+  .asma-grave-hero__content p {
+    max-width: 100%;
+  }.asma-grave-symptoms__grid,
+  .asma-grave-types__grid,
+  .asma-grave-severity__grid {
+    flex-direction: column;
+  }.asma-grave-symptoms__item,
+  .asma-grave-types__card,
+  .asma-grave-severity__card {
+    flex-basis: auto;
+    width: 100%;
+  }.asma-grave-allergic__box-columns {
+    flex-direction: column;
+  }
+}

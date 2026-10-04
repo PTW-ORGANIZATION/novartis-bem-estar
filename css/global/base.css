@@ -1,0 +1,74 @@
+:root {
+  --color-blue-dark: #002068;
+  --color-blue: #0460a9;
+  --color-blue-light: #bce5fd;
+  --color-blue-bg: #f3f5fb;
+  --color-gray-text: #5b616e;
+  --color-white: #ffffff;
+  --color-yellow: #f6a723;
+
+  --font-body: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --max-width: 1200px;
+  --side-padding: 24px;
+
+  --header-height: 86px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-blue-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--side-padding);
+}
+
+.section {
+  padding-block: 64px;
+}
+
+main {
+  overflow-x: hidden;
+}

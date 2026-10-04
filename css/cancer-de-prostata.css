@@ -1,0 +1,1153 @@
+body {
+  background: var(--color-blue-bg);
+}
+
+.cancer-de-prostata-top {
+  padding-block: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+  background: var(--color-white);
+  border-radius: 400px;
+  padding: 6px 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.breadcrumbs__item {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-blue-dark);
+  flex-shrink: 0;
+}
+
+.breadcrumbs__item.is-current {
+  color: var(--color-blue);
+}
+
+.breadcrumbs__item ~ .breadcrumbs__item:not(.is-current) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breadcrumbs__divider {
+  width: 5px;
+  height: 8px;
+}
+
+.cancer-de-prostata-hero__image {
+  left: 479px;
+  width: calc(100% - 479px);
+  object-position: 50% 26%;
+}
+
+.cancer-de-prostata-subnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: max(var(--side-padding), calc((100% - var(--max-width)) / 2 + var(--side-padding)));
+  padding-right: var(--side-padding);
+  padding-block: 0 40px;
+}
+
+.cancer-de-prostata-subnav__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+.cancer-de-prostata-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.cancer-de-prostata-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.cancer-de-prostata-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e1e4eb;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-text);
+  white-space: nowrap;
+}
+
+.cancer-de-prostata-overview__inner,
+.cancer-de-prostata-symptoms__inner,
+.cancer-de-prostata-risk__inner,
+.cancer-de-prostata-types__inner,
+.cancer-de-prostata-advanced__inner,
+.cancer-de-prostata-brazil__inner,
+.cancer-de-prostata-diagnosis__inner,
+.cancer-de-prostata-treatment__inner,
+.cancer-de-prostata-staging__inner,
+.cancer-de-prostata-multidisciplinary__inner,
+.cancer-de-prostata-coping__inner,
+.cancer-de-prostata-articles__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-prostata-overview h2,
+.cancer-de-prostata-symptoms h2,
+.cancer-de-prostata-risk h2,
+.cancer-de-prostata-types h2,
+.cancer-de-prostata-advanced h2,
+.cancer-de-prostata-brazil h2,
+.cancer-de-prostata-diagnosis h2,
+.cancer-de-prostata-treatment h2,
+.cancer-de-prostata-staging h2,
+.cancer-de-prostata-multidisciplinary h2,
+.cancer-de-prostata-coping h2,
+.cancer-de-prostata-quality h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+sup {
+  font-size: 12px;
+}
+
+.cancer-de-prostata-overview {
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-overview__inner {
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.cancer-de-prostata-overview__image {
+  flex: 0 0 auto;
+  width: 466px;
+  height: 385px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-prostata-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 45% 50%;
+}
+
+.cancer-de-prostata-overview__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-prostata-overview__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-overview__lead {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--color-blue) !important;
+}
+
+.cancer-de-prostata-symptoms {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-symptoms__sublead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-symptoms__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-symptoms__lists {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 40px;
+  width: 100%;
+}
+
+.cancer-de-prostata-symptoms__lists ul {
+  flex: 1 1 400px;
+  list-style: disc;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cancer-de-prostata-symptoms__lists li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-prostata-symptoms__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cancer-de-prostata-symptoms__highlight-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.cancer-de-prostata-symptoms__highlight p:not(.cancer-de-prostata-symptoms__highlight-title) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  width: 100%;
+}
+
+.cancer-de-prostata-risk {
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-risk__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-risk__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-prostata-risk-card {
+  flex: 1 1 300px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-prostata-risk-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cancer-de-prostata-risk-card__header img {
+  flex: 0 0 auto;
+  height: 49px;
+  width: auto;
+}
+
+.cancer-de-prostata-risk-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-risk-card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-types {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-types__bar {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  border-radius: 12px;
+  background: var(--color-blue-bg);
+  overflow: hidden;
+}
+
+.cancer-de-prostata-types__bar-fill--major {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 91.6%;
+  background: var(--color-blue);
+}
+
+.cancer-de-prostata-types__bar-fill--minor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 8.4%;
+  background: var(--color-blue-dark);
+}
+
+.cancer-de-prostata-types__bar-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-white);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cancer-de-prostata-types__bar-label--major {
+  left: 16px;
+}
+
+.cancer-de-prostata-types__bar-label--minor {
+  right: 16px;
+}
+
+@keyframes cancer-de-prostata-bar-grow-major {
+  from {
+    width: 0;
+  }
+  to {
+    width: 91.6%;
+  }
+}
+
+@keyframes cancer-de-prostata-bar-grow-minor {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8.4%;
+  }
+}
+
+.cancer-de-prostata-types__bar:hover .cancer-de-prostata-types__bar-fill--major {
+  animation: cancer-de-prostata-bar-grow-major 0.9s ease-out;
+}
+
+.cancer-de-prostata-types__bar:hover .cancer-de-prostata-types__bar-fill--minor {
+  animation: cancer-de-prostata-bar-grow-minor 0.9s ease-out;
+}
+
+.cancer-de-prostata-types__cols {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 40px;
+  width: 100%;
+}
+
+.cancer-de-prostata-types__cols p {
+  flex: 1 1 460px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-types__cols strong {
+  font-weight: 700;
+}
+
+.cancer-de-prostata-types__term {
+  color: var(--color-blue);
+  text-transform: uppercase;
+}
+
+.cancer-de-prostata-types__term--dark {
+  color: var(--color-blue-dark);
+  text-transform: uppercase;
+}
+
+.cancer-de-prostata-advanced {
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-advanced__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-prostata-advanced__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-advanced__text p:not(.cancer-de-prostata-advanced__lead) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-advanced__highlight {
+  width: 100%;
+  background: var(--color-blue);
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cancer-de-prostata-advanced__highlight img {
+  flex: 0 0 auto;
+  width: 122px;
+  height: 122px;
+}
+
+.cancer-de-prostata-advanced__highlight-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cancer-de-prostata-advanced__highlight-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.cancer-de-prostata-advanced__highlight-text p strong {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.cancer-de-prostata-brazil {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-brazil__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.cancer-de-prostata-brazil__image {
+  flex: 0 0 auto;
+  width: 540px;
+  height: 467px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-prostata-brazil__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-prostata-brazil__stats {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.cancer-de-prostata-brazil-stat {
+  background: var(--color-blue-bg);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.cancer-de-prostata-brazil-stat__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.32px;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cancer-de-prostata-brazil-stat__text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.22px;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-accordion {
+  width: 100%;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.cancer-de-prostata-accordion--full {
+  background: var(--color-blue-bg);
+}
+
+.cancer-de-prostata-accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cancer-de-prostata-accordion__item:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e4eb;
+}
+
+.cancer-de-prostata-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cancer-de-prostata-accordion__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-accordion__chevron {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.cancer-de-prostata-accordion__item.is-collapsed .cancer-de-prostata-accordion__chevron {
+  transform: rotate(-90deg);
+}
+
+.cancer-de-prostata-accordion__item.is-collapsed .cancer-de-prostata-accordion__text {
+  display: none;
+}
+
+.cancer-de-prostata-accordion__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.cancer-de-prostata-accordion__text,
+.cancer-de-prostata-accordion__text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-diagnosis {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-diagnosis__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-diagnosis__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-treatment {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-treatment__intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.cancer-de-prostata-treatment__intro-text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cancer-de-prostata-treatment__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-treatment__intro-text p:not(.cancer-de-prostata-treatment__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-treatment__list {
+  list-style: disc;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cancer-de-prostata-treatment__list li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.cancer-de-prostata-treatment__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 348px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-prostata-treatment__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-prostata-treatment__inner h2:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.cancer-de-prostata-treatment__intro-p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-staging {
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-staging__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-staging__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-staging__list {
+  list-style: disc;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cancer-de-prostata-staging__list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-prostata-staging__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.cancer-de-prostata-staging-card {
+  flex: 1 1 400px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-prostata-staging-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cancer-de-prostata-staging-card__header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-staging-card__icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.cancer-de-prostata-staging-card.is-collapsed .cancer-de-prostata-staging-card__icon {
+  transform: rotate(-90deg);
+}
+
+.cancer-de-prostata-staging-card.is-collapsed .cancer-de-prostata-staging-card__text {
+  display: none;
+}
+
+.cancer-de-prostata-staging-card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-staging-card p strong {
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.cancer-de-prostata-multidisciplinary {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-multidisciplinary__content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.cancer-de-prostata-multidisciplinary__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cancer-de-prostata-multidisciplinary__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-multidisciplinary__question {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-multidisciplinary__text ul {
+  list-style: disc;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.cancer-de-prostata-multidisciplinary__text li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+}
+
+.cancer-de-prostata-multidisciplinary__text > p:not(.cancer-de-prostata-multidisciplinary__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-multidisciplinary__image {
+  flex: 0 0 auto;
+  width: 461px;
+  height: 641px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-prostata-multidisciplinary__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancer-de-prostata-coping {
+  background: var(--color-blue-bg);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-coping__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-coping__intro {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-quality {
+  background: var(--color-white);
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-quality__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cancer-de-prostata-quality__image {
+  flex: 0 0 auto;
+  width: 399px;
+  height: 526px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cancer-de-prostata-quality__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72.7% 50%;
+}
+
+.cancer-de-prostata-quality__text {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cancer-de-prostata-quality__lead {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-blue);
+  margin: 0;
+}
+
+.cancer-de-prostata-quality__text > p:not(.cancer-de-prostata-quality__lead) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0;
+}
+
+.cancer-de-prostata-quality__text > p strong {
+  font-weight: 700;
+}
+
+.cancer-de-prostata-quality__highlight {
+  width: 100%;
+  background: var(--color-blue-dark);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cancer-de-prostata-quality__highlight p {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.cancer-de-prostata-quality__highlight-caps {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--color-yellow);
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: -0.26px;
+}
+
+.cancer-de-prostata-articles {
+  padding-block: 40px;
+}
+
+.cancer-de-prostata-articles__inner h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+  line-height: 1.3;
+  color: var(--color-blue-dark);
+  margin: 0;
+}
+
+.cancer-de-prostata-articles__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cancer-de-prostata-references {
+  background: var(--color-white);
+  padding: 40px 0 32px;
+}
+
+.cancer-de-prostata-references__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-blue-dark);
+  margin: 0 0 20px;
+}
+
+.cancer-de-prostata-references__glossary {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 0 0 20px;
+}
+
+.cancer-de-prostata-references__glossary strong {
+  font-weight: 700;
+}
+
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.references-list p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+}
+
+.references-list strong {
+  font-weight: 700;
+}
+
+.cancer-de-prostata-references__legal {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+.cancer-de-prostata-references__code {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-gray-text);
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .cancer-de-prostata-overview__inner,
+  .cancer-de-prostata-brazil__content,
+  .cancer-de-prostata-treatment__intro,
+  .cancer-de-prostata-multidisciplinary__content,
+  .cancer-de-prostata-quality__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cancer-de-prostata-overview__image,
+  .cancer-de-prostata-brazil__image,
+  .cancer-de-prostata-treatment__image,
+  .cancer-de-prostata-multidisciplinary__image,
+  .cancer-de-prostata-quality__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .cancer-de-prostata-symptoms__lists,
+  .cancer-de-prostata-types__cols,
+  .cancer-de-prostata-risk__grid,
+  .cancer-de-prostata-staging__grid {
+    flex-direction: column;
+  }
+
+  .cancer-de-prostata-hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {.cancer-de-prostata-hero {
+    height: auto;
+  }.cancer-de-prostata-hero__content h1,
+  .cancer-de-prostata-hero__content p {
+    max-width: 100%;
+  }.cancer-de-prostata-types__bar-label {
+    font-size: 28px;
+  }.cancer-de-prostata-advanced__highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+}
