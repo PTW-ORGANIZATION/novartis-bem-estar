@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
   var CAMPAIGNS = {
     ame: {
       image: "campaign-ame.png",
@@ -84,12 +85,12 @@
     var category = categoryOverride || data.category;
     var card = document.createElement(linked ? "a" : "div");
     card.className = "campaign-card";
-    if (linked) card.href = "/pages/campanhas.html";
+    if (linked) card.href = ROOT_PREFIX + "pages/campanhas.html";
 
     var imageWrap = document.createElement("div");
     imageWrap.className = "campaign-card__image";
     var img = document.createElement("img");
-    img.src = "/assets/images/" + data.image;
+    img.src = ROOT_PREFIX + "assets/images/" + data.image;
     img.title = data.title;
     img.alt = data.alt;
     imageWrap.appendChild(img);
@@ -145,7 +146,7 @@
         cta.className = "campaign-card campaign-card--cta";
         cta.innerHTML =
           "<p>Não existem campanhas ativas sobre " + label + " no momento.</p>" +
-          "<a href=\"/pages/campanhas.html\" class=\"btn\">Conheça outras campanhas</a>";
+          "<a href=\"" + ROOT_PREFIX + "pages/campanhas.html\" class=\"btn\">Conheça outras campanhas</a>";
         grid.appendChild(cta);
         return;
       }

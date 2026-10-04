@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf('/pages/') !== -1 ? '../' : '';
   var MAX_SUGGESTIONS = 6;
 
   function setup(input) {
@@ -19,7 +20,7 @@
 
       items.forEach(function (item) {
         var a = document.createElement('a');
-        a.href = '/pages/busca.html?q=' + encodeURIComponent(item.title);
+        a.href = ROOT_PREFIX + 'pages/busca.html?q=' + encodeURIComponent(item.title);
         a.className = 'search-suggestions__item';
 
         var type = document.createElement('span');

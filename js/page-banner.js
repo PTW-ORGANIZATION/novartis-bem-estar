@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
   var PAGE_BANNERS = {
     campanhas: {
       image: "campaigns-banner.png",
@@ -102,7 +103,7 @@
       wrapper.className = slug + "-banner page-banner";
 
       var img = document.createElement("img");
-      img.src = "/assets/images/" + data.image;
+      img.src = ROOT_PREFIX + "assets/images/" + data.image;
       img.className = slug + "-banner__image page-banner__image";
       if (data.title) img.title = data.title;
       if (data.alt) img.alt = data.alt;

@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
   var RELATED = {
     "pele-dia-a-dia": "Cuidados essenciais com a pele no dia a dia",
     "doencas-neurologicas-raras": "Sinais de alerta em doenças neurológicas raras",
@@ -19,7 +20,7 @@
       if (!title) return;
 
       var card = document.createElement("a");
-      card.href = "/pages/artigo.html";
+      card.href = ROOT_PREFIX + "pages/artigo.html";
       card.className = "related-card";
 
       var imageWrap = document.createElement("div");

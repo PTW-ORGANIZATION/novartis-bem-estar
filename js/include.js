@@ -1,8 +1,11 @@
+const ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
+
 async function includePartial(selector, url) {
   const els = document.querySelectorAll(selector);
   if (!els.length) return;
-  const res = await fetch(url);
-  const html = await res.text();
+  const res = await fetch(ROOT_PREFIX + url);
+  let html = await res.text();
+  html = html.replace(/((?:href|src|action)=")\/(?!\/)/g, "$1" + ROOT_PREFIX);
   els.forEach((el) => (el.innerHTML = html));
 }
 
@@ -12,8 +15,8 @@ const SPECIALTY_CONDITIONS = {
     cardDescription: "Informação e cuidado para a saúde do coração",
     cardImage: "specialty-cardiologia.png",
     conditions: [
-      { label: "Infarto", icon: "condition-infarto.svg", href: "/pages/infarto.html" },
-      { label: "Colesterol Alto", icon: "condition-colesterol-alto.svg", href: "/pages/colesterol-alto.html" },
+      { label: "Infarto", icon: "condition-infarto.svg", href: ROOT_PREFIX + "pages/infarto.html" },
+      { label: "Colesterol Alto", icon: "condition-colesterol-alto.svg", href: ROOT_PREFIX + "pages/colesterol-alto.html" },
     ],
   },
   dermatologia: {
@@ -21,10 +24,10 @@ const SPECIALTY_CONDITIONS = {
     cardDescription: "Informação e cuidado para saúde da pele",
     cardImage: "specialty-dermatologia.png",
     conditions: [
-      { label: "Hidradenite Supurativa", icon: "condition-hidradenite-supurativa.svg", href: "/pages/hidradenite-supurativa.html" },
-      { label: "Furúnculo", icon: "condition-furunculo.svg", href: "/pages/furunculo.html" },
-      { label: "Urticária (UCE)", icon: "condition-urticaria.svg", href: "/pages/urticaria-uce.html" },
-      { label: "Psoríase", icon: "condition-psoriase.svg", href: "/pages/psoriase.html" },
+      { label: "Hidradenite Supurativa", icon: "condition-hidradenite-supurativa.svg", href: ROOT_PREFIX + "pages/hidradenite-supurativa.html" },
+      { label: "Furúnculo", icon: "condition-furunculo.svg", href: ROOT_PREFIX + "pages/furunculo.html" },
+      { label: "Urticária (UCE)", icon: "condition-urticaria.svg", href: ROOT_PREFIX + "pages/urticaria-uce.html" },
+      { label: "Psoríase", icon: "condition-psoriase.svg", href: ROOT_PREFIX + "pages/psoriase.html" },
     ],
   },
   hematologia: {
@@ -32,24 +35,24 @@ const SPECIALTY_CONDITIONS = {
     cardDescription: "Informação e cuidado para as do sangue e da medula óssea",
     cardImage: "specialty-hematologia.png",
     conditions: [
-      { label: "Hemoglobinúria Paroxística Noturna (HPN)", icon: "condition-hpn.svg", href: "/pages/hpn.html" },
-      { label: "Leucemia Mieloide Crônica (LMC)", icon: "condition-lmc.svg", href: "/pages/lmc.html" },
-      { label: "Mielofibrose", icon: "condition-mielofibrose.svg", href: "/pages/mielofibrose.html" },
+      { label: "Hemoglobinúria Paroxística Noturna (HPN)", icon: "condition-hpn.svg", href: ROOT_PREFIX + "pages/hpn.html" },
+      { label: "Leucemia Mieloide Crônica (LMC)", icon: "condition-lmc.svg", href: ROOT_PREFIX + "pages/lmc.html" },
+      { label: "Mielofibrose", icon: "condition-mielofibrose.svg", href: ROOT_PREFIX + "pages/mielofibrose.html" },
     ],
   },
   nefrologia: {
     label: "nefrologia",
     cardDescription: "Informação e cuidado para a saúde dos rins",
     cardImage: "specialty-nefrologia.png",
-    conditions: [{ label: "Doenças Renais Graves (C3G e IgAN)", icon: "condition-doencas-renais-graves.svg", href: "/index.html" }],
+    conditions: [{ label: "Doenças Renais Graves (C3G e IgAN)", icon: "condition-doencas-renais-graves.svg", href: ROOT_PREFIX + "index.html" }],
   },
   neurologia: {
     label: "neurologia",
     cardDescription: "Informação e cuidado para saúde neurológica",
     cardImage: "specialty-neurologia.png",
     conditions: [
-      { label: "Esclerose Múltipla", icon: "condition-esclerose-multipla.svg", href: "/pages/esclerose-multipla.html" },
-      { label: "Atrofia Muscular Espinhal (AME)", icon: "condition-ame.svg", href: "/pages/ame.html" },
+      { label: "Esclerose Múltipla", icon: "condition-esclerose-multipla.svg", href: ROOT_PREFIX + "pages/esclerose-multipla.html" },
+      { label: "Atrofia Muscular Espinhal (AME)", icon: "condition-ame.svg", href: ROOT_PREFIX + "pages/ame.html" },
     ],
   },
   oncologia: {
@@ -57,23 +60,23 @@ const SPECIALTY_CONDITIONS = {
     cardDescription: "Informação e cuidado ao logo da jornada oncológica",
     cardImage: "specialty-oncologia.png",
     conditions: [
-      { label: "Câncer de Mama", icon: "condition-cancer-mama.svg", href: "/pages/cancer-de-mama.html" },
-      { label: "Câncer de Próstata", icon: "condition-cancer-prostata.svg", href: "/pages/cancer-de-prostata.html" },
+      { label: "Câncer de Mama", icon: "condition-cancer-mama.svg", href: ROOT_PREFIX + "pages/cancer-de-mama.html" },
+      { label: "Câncer de Próstata", icon: "condition-cancer-prostata.svg", href: ROOT_PREFIX + "pages/cancer-de-prostata.html" },
     ],
   },
   pneumologia: {
     label: "pneumologia",
     cardDescription: "Informação e cuidado para a saúde dos pulmões e da respiração",
     cardImage: "specialty-pneumologia.png",
-    conditions: [{ label: "Asma Grave", icon: "condition-asma-grave.svg", href: "/pages/asma-grave.html" }],
+    conditions: [{ label: "Asma Grave", icon: "condition-asma-grave.svg", href: ROOT_PREFIX + "pages/asma-grave.html" }],
   },
   reumatologia: {
     label: "reumatologia",
     cardDescription: "Informação e cuidado para a saúde das articulações e dos músculos",
     cardImage: "specialty-reumatologia.png",
     conditions: [
-      { label: "Artrite Psoriásica", icon: "condition-artrite-psoriasica.svg", href: "/pages/artrite-psoriasica.html" },
-      { label: "Dor nas Costas", icon: "condition-dor-nas-costas.svg", href: "/pages/dor-nas-costas.html" },
+      { label: "Artrite Psoriásica", icon: "condition-artrite-psoriasica.svg", href: ROOT_PREFIX + "pages/artrite-psoriasica.html" },
+      { label: "Dor nas Costas", icon: "condition-dor-nas-costas.svg", href: ROOT_PREFIX + "pages/dor-nas-costas.html" },
     ],
   },
 
@@ -109,11 +112,11 @@ function renderSpecialtyConditions(specialtyKey) {
   const pills = data.conditions
     .map(
       (condition) =>
-        `<a href="${condition.href}" class="navbar__condition"><img src="/assets/icons/${condition.icon}">${condition.label}</a>`
+        `<a href="${condition.href}" class="navbar__condition"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}">${condition.label}</a>`
     )
     .join("");
 
-  row.innerHTML = `${pills}<a href="/pages/${specialtyKey}.html" class="navbar__condition navbar__condition--cta">Mais sobre ${data.label}</a>`;
+  row.innerHTML = `${pills}<a href="${ROOT_PREFIX}pages/${specialtyKey}.html" class="navbar__condition navbar__condition--cta">Mais sobre ${data.label}</a>`;
   row.classList.add("is-open");
 }
 
@@ -127,7 +130,7 @@ function renderPageConditions() {
     grid.innerHTML = data.conditions
       .map(
         (condition) =>
-          `<a href="${condition.href}" class="condition-item"><img src="/assets/icons/${condition.icon}"><span>${condition.label}</span></a>`
+          `<a href="${condition.href}" class="condition-item"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}"><span>${condition.label}</span></a>`
       )
       .join("");
   });
@@ -246,12 +249,12 @@ function initFooter() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([
-    includePartial("[data-include='header']", "/partials/header.html"),
-    includePartial("[data-include='footer']", "/partials/footer.html"),
-    includePartial("[data-include='a11y']", "/partials/accessibility-widget.html"),
+    includePartial("[data-include='header']", "partials/header.html"),
+    includePartial("[data-include='footer']", "partials/footer.html"),
+    includePartial("[data-include='a11y']", "partials/accessibility-widget.html"),
   ]);
 
-  await includePartial("[data-include='logo']", "/partials/logo.html");
+  await includePartial("[data-include='logo']", "partials/logo.html");
 
   initHeader();
   initFooter();

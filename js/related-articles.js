@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
   var RELATED_ARTICLES = {
     ame: [
       {
@@ -480,13 +481,13 @@
 
       items.forEach(function (item) {
         var card = document.createElement("a");
-        card.href = "/pages/artigo.html";
+        card.href = ROOT_PREFIX + "pages/artigo.html";
         card.className = "related-article-card";
 
         var imageWrap = document.createElement("div");
         imageWrap.className = "related-article-card__image";
         var img = document.createElement("img");
-        img.src = "/assets/images/" + item.image;
+        img.src = ROOT_PREFIX + "assets/images/" + item.image;
         imageWrap.appendChild(img);
         if (item.imageCaption) {
           var caption = document.createElement("span");
@@ -502,9 +503,9 @@
           "<h3>" + item.title + "</h3>" +
           "<p>" + item.description + "</p>" +
           "<div class=\"related-article-card__meta\">" +
-          "<span><img src=\"/assets/icons/icon-like.svg\">" + item.likes + "</span>" +
-          "<span><img src=\"/assets/icons/icon-timer.svg\">" + item.readTime + "</span>" +
-          "<span><img src=\"/assets/icons/icon-calendar.svg\">" + item.date + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + item.likes + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + item.readTime + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + item.date + "</span>" +
           "</div>";
 
         card.appendChild(imageWrap);

@@ -1,4 +1,5 @@
 (function () {
+  var ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
   var FILTERS = [
     { slug: "todos", label: "Todos os temas" },
     { slug: "artrite-psoriasica", label: "Artrite Psoriásica" },
@@ -67,7 +68,7 @@
       var category = index < SECOND_TAG_START_INDEX ? "Câncer de Mama" : "Psoríase";
 
       var card = document.createElement("a");
-      card.href = "/pages/artigo.html";
+      card.href = ROOT_PREFIX + "pages/artigo.html";
       card.className = "article-card";
       card.dataset.category = slug;
 
@@ -81,9 +82,9 @@
         "<h3>" + PLACEHOLDER.title + "</h3>" +
         "<p>" + PLACEHOLDER.description + "</p>" +
         "<div class=\"article-card__meta\">" +
-        "<span><img src=\"/assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
-        "<span><img src=\"/assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
-        "<span><img src=\"/assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
         "</div>";
 
       card.appendChild(imageWrap);
@@ -105,7 +106,7 @@
       if (!rank) return;
 
       var card = document.createElement("a");
-      card.href = "/pages/artigo.html";
+      card.href = ROOT_PREFIX + "pages/artigo.html";
       card.className = "popular-card";
 
       var imageWrap = document.createElement("div");
@@ -121,9 +122,9 @@
         "<h3>" + PLACEHOLDER.title + "</h3>" +
         "<p>" + PLACEHOLDER.description + "</p>" +
         "<div class=\"article-card__meta\">" +
-        "<span><img src=\"/assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
-        "<span><img src=\"/assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
-        "<span><img src=\"/assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
         "</div>";
 
       card.appendChild(imageWrap);

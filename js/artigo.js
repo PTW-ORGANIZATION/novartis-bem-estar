@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  var ROOT_PREFIX = location.pathname.indexOf('/pages/') !== -1 ? '../' : '';
   var sidebarRelatedList = document.querySelector('[data-sidebar-related]');
   if (sidebarRelatedList) {
     var SIDEBAR_RELATED_CARD = {
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     for (var i = 0; i < 4; i++) {
       var card = document.createElement('a');
-      card.href = '/pages/artigo.html';
+      card.href = ROOT_PREFIX + 'pages/artigo.html';
       card.className = 'artigo-related-card';
       card.innerHTML =
         '<div class="artigo-related-card__image"></div>' +
@@ -18,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '<span class="tag tag--dark">' + SIDEBAR_RELATED_CARD.tag + '</span>' +
         '<h3>' + SIDEBAR_RELATED_CARD.title + '</h3>' +
         '<div class="artigo-related-card__meta">' +
-        '<span><img src="/assets/icons/icon-like.svg">' + SIDEBAR_RELATED_CARD.likes + '</span>' +
-        '<span><img src="/assets/icons/icon-timer.svg">' + SIDEBAR_RELATED_CARD.readTime + '</span>' +
-        '<span><img src="/assets/icons/icon-calendar.svg">' + SIDEBAR_RELATED_CARD.days + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-like.svg">' + SIDEBAR_RELATED_CARD.likes + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-timer.svg">' + SIDEBAR_RELATED_CARD.readTime + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-calendar.svg">' + SIDEBAR_RELATED_CARD.days + '</span>' +
         '</div>' +
         '</div>';
       sidebarRelatedList.appendChild(card);
@@ -91,14 +92,14 @@ document.addEventListener('DOMContentLoaded', function () {
   if (feedbackContainer) {
     var FEEDBACK_ICONS = {
       up: {
-        active: '/assets/icons/feedback-thumbs-up-active.svg',
-        inactive: '/assets/icons/feedback-thumbs-up-inactive.svg',
-        default: '/assets/icons/feedback-thumbs-up-default.svg',
+        active: ROOT_PREFIX + 'assets/icons/feedback-thumbs-up-active.svg',
+        inactive: ROOT_PREFIX + 'assets/icons/feedback-thumbs-up-inactive.svg',
+        default: ROOT_PREFIX + 'assets/icons/feedback-thumbs-up-default.svg',
       },
       down: {
-        active: '/assets/icons/feedback-thumbs-down-active.svg',
-        inactive: '/assets/icons/feedback-thumbs-down-inactive.svg',
-        default: '/assets/icons/feedback-thumbs-down-default.svg',
+        active: ROOT_PREFIX + 'assets/icons/feedback-thumbs-down-active.svg',
+        inactive: ROOT_PREFIX + 'assets/icons/feedback-thumbs-down-inactive.svg',
+        default: ROOT_PREFIX + 'assets/icons/feedback-thumbs-down-default.svg',
       },
     };
     var upImg = feedbackContainer.querySelector('[data-feedback="up"] img');

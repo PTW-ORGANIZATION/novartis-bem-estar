@@ -7,16 +7,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/global/base.css">
-  <link rel="stylesheet" href="/css/global/header.css">
-  <link rel="stylesheet" href="/css/global/footer.css">
-  <link rel="stylesheet" href="/css/components/button.css">
-  <link rel="stylesheet" href="/css/components/condition-hero.css">
-  <link rel="stylesheet" href="/css/components/accessibility-widget.css">
-  <link rel="stylesheet" href="/css/components/search-suggestions.css">
-  <link rel="stylesheet" href="/css/components/search-popup.css">
-  <link rel="stylesheet" href="/css/components/utilities.css">
-  <link rel="stylesheet" href="/css/busca.css">
+  <link rel="stylesheet" href="../css/global/base.css">
+  <link rel="stylesheet" href="../css/global/header.css">
+  <link rel="stylesheet" href="../css/global/footer.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+  <link rel="stylesheet" href="../css/components/condition-hero.css">
+  <link rel="stylesheet" href="../css/components/accessibility-widget.css">
+  <link rel="stylesheet" href="../css/components/search-suggestions.css">
+  <link rel="stylesheet" href="../css/components/search-popup.css">
+  <link rel="stylesheet" href="../css/components/utilities.css">
+  <link rel="stylesheet" href="../css/busca.css">
 </head>
 <body>
   <div data-include="header"></div>
@@ -24,10 +24,10 @@
   <main>
     <section class="search-page">
       <div class="container search-page__inner">
-        <form class="search-recap" role="search" action="/pages/busca.html" method="get" data-search-wrapper autocomplete="off">
+        <form class="search-recap" role="search" action="../pages/busca.html" method="get" data-search-wrapper autocomplete="off">
           <input type="search" name="q" class="search-recap__input" placeholder="Digite o que você procura" data-search-input data-search-recap-input>
           <button type="submit" aria-label="Buscar" class="search-recap__submit">
-            <img src="/assets/icons/search.svg" class="search-recap__icon">
+            <img src="../assets/icons/search.svg" class="search-recap__icon">
           </button>
           <div class="search-suggestions" data-search-suggestions></div>
         </form>
@@ -44,12 +44,12 @@
           <div class="search-empty__box">
             <h2 class="search-empty__title">Ops!</h2>
             <p class="search-empty__description" data-search-empty-description>Não encontramos nenhum resultado para a sua busca.</p>
-            <a href="/pages/busca.html" class="search-empty__btn">
-              <img src="/assets/icons/search-icon-white.svg">
+            <a href="../pages/busca.html" class="search-empty__btn">
+              <img src="../assets/icons/search-icon-white.svg">
               Buscar outro termo
             </a>
           </div>
-          <img src="/assets/images/busca-empty-illustration.svg" class="search-empty__illustration">
+          <img src="../assets/images/busca-empty-illustration.svg" class="search-empty__illustration">
         </div>
       </div>
     </section>
@@ -58,13 +58,13 @@
   <div data-include="footer"></div>
   <div data-include="a11y"></div>
 
-  <script src="/js/search-index.js"></script>
+  <script src="../js/search-index.js"></script>
 
-  <script src="/js/search-autocomplete.js"></script>
+  <script src="../js/search-autocomplete.js"></script>
 
-  <script src="/js/search-popup.js"></script>
+  <script src="../js/search-popup.js"></script>
 
-  <script src="/js/include.js"></script>
-  <script src="/js/busca.js"></script>
+  <script src="../js/include.js"></script>
+  <script src="../js/busca.js"></script>
 </body>
 </html>
