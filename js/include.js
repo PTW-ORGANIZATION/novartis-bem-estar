@@ -14,6 +14,8 @@ const SPECIALTY_CONDITIONS = {
     label: "cardiologia",
     cardDescription: "Informação e cuidado para a saúde do coração",
     cardImage: "specialty-cardiologia.png",
+    cardImageTitle: "Casal idoso abraçado e sorrindo ao ar livre",
+    cardImageAlt: "Homem e mulher sêniores abraçados e rindo em uma área arborizada ao pôr do sol.",
     conditions: [
       { label: "Infarto", icon: "condition-infarto.svg", href: ROOT_PREFIX + "pages/infarto.html" },
       { label: "Colesterol Alto", icon: "condition-colesterol-alto.svg", href: ROOT_PREFIX + "pages/colesterol-alto.html" },
@@ -23,6 +25,8 @@ const SPECIALTY_CONDITIONS = {
     label: "dermatologia",
     cardDescription: "Informação e cuidado para saúde da pele",
     cardImage: "specialty-dermatologia.png",
+    cardImageTitle: "Homem sorridente em área externa",
+    cardImageAlt: "Homem de cabelo afro sorrindo para a câmera em uma área externa, com outra pessoa ao fundo.",
     conditions: [
       { label: "Hidradenite Supurativa", icon: "condition-hidradenite-supurativa.svg", href: ROOT_PREFIX + "pages/hidradenite-supurativa.html" },
       { label: "Furúnculo", icon: "condition-furunculo.svg", href: ROOT_PREFIX + "pages/furunculo.html" },
@@ -34,6 +38,8 @@ const SPECIALTY_CONDITIONS = {
     label: "hematologia",
     cardDescription: "Informação e cuidado para as do sangue e da medula óssea",
     cardImage: "specialty-hematologia.png",
+    cardImageTitle: "Casal brindando com bebidas em dia ensolarado na praia",
+    cardImageAlt: "Homem de dreadlocks e mulher sorridente sentados na areia da praia, brindando com garrafas de bebida sob a luz do sol.",
     conditions: [
       { label: "Hemoglobinúria Paroxística Noturna (HPN)", icon: "condition-hpn.svg", href: ROOT_PREFIX + "pages/hpn.html" },
       { label: "Leucemia Mieloide Crônica (LMC)", icon: "condition-lmc.svg", href: ROOT_PREFIX + "pages/lmc.html" },
@@ -44,12 +50,16 @@ const SPECIALTY_CONDITIONS = {
     label: "nefrologia",
     cardDescription: "Informação e cuidado para a saúde dos rins",
     cardImage: "specialty-nefrologia.png",
+    cardImageTitle: "Família reunida sorrindo no sofá de casa",
+    cardImageAlt: "Avô, mãe e garotinho sentados juntos em um sofá na sala de estar, interagindo alegremente.",
     conditions: [{ label: "Doenças Renais Graves (C3G e IgAN)", icon: "condition-doencas-renais-graves.svg", href: ROOT_PREFIX + "index.html" }],
   },
   neurologia: {
     label: "neurologia",
     cardDescription: "Informação e cuidado para saúde neurológica",
     cardImage: "specialty-neurologia.png",
+    cardImageTitle: "Avó segurando bebê ao ar livre",
+    cardImageAlt: "Mulher idosa segurando um bebê no ar com carinho no jardim em frente a uma casa.",
     conditions: [
       { label: "Esclerose Múltipla", icon: "condition-esclerose-multipla.svg", href: ROOT_PREFIX + "pages/esclerose-multipla.html" },
       { label: "Atrofia Muscular Espinhal (AME)", icon: "condition-ame.svg", href: ROOT_PREFIX + "pages/ame.html" },
@@ -59,6 +69,8 @@ const SPECIALTY_CONDITIONS = {
     label: "oncologia",
     cardDescription: "Informação e cuidado ao logo da jornada oncológica",
     cardImage: "specialty-oncologia.png",
+    cardImageTitle: "Prática de yoga ao ar livre em grupo",
+    cardImageAlt: "Mulher de camiseta roxa com os braços abertos olhando para cima durante aula de yoga ao ar livre.",
     conditions: [
       { label: "Câncer de Mama", icon: "condition-cancer-mama.svg", href: ROOT_PREFIX + "pages/cancer-de-mama.html" },
       { label: "Câncer de Próstata", icon: "condition-cancer-prostata.svg", href: ROOT_PREFIX + "pages/cancer-de-prostata.html" },
@@ -68,12 +80,16 @@ const SPECIALTY_CONDITIONS = {
     label: "pneumologia",
     cardDescription: "Informação e cuidado para a saúde dos pulmões e da respiração",
     cardImage: "specialty-pneumologia.png",
+    cardImageTitle: "Mãe carregando filho pequeno nas costas perto da janela",
+    cardImageAlt: "Mulher sorridente carregando garotinho nas costas em um ambiente interno iluminado por luz natural.",
     conditions: [{ label: "Asma Grave", icon: "condition-asma-grave.svg", href: ROOT_PREFIX + "pages/asma-grave.html" }],
   },
   reumatologia: {
     label: "reumatologia",
     cardDescription: "Informação e cuidado para a saúde das articulações e dos músculos",
     cardImage: "specialty-reumatologia.png",
+    cardImageTitle: "Homem sorridente de capacete andando de bicicleta",
+    cardImageAlt: "Homem de capacete e camiseta azul sorrindo enquanto anda de bicicleta em uma via arborizada.",
     conditions: [
       { label: "Artrite Psoriásica", icon: "condition-artrite-psoriasica.svg", href: ROOT_PREFIX + "pages/artrite-psoriasica.html" },
       { label: "Dor nas Costas", icon: "condition-dor-nas-costas.svg", href: ROOT_PREFIX + "pages/dor-nas-costas.html" },
@@ -112,7 +128,7 @@ function renderSpecialtyConditions(specialtyKey) {
   const pills = data.conditions
     .map(
       (condition) =>
-        `<a href="${condition.href}" class="navbar__condition"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}">${condition.label}</a>`
+        `<a href="${condition.href}" class="navbar__condition"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}" alt="">${condition.label}</a>`
     )
     .join("");
 
@@ -130,7 +146,7 @@ function renderPageConditions() {
     grid.innerHTML = data.conditions
       .map(
         (condition) =>
-          `<a href="${condition.href}" class="condition-item"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}"><span>${condition.label}</span></a>`
+          `<a href="${condition.href}" class="condition-item"><img src="${ROOT_PREFIX}assets/icons/${condition.icon}" alt=""><span>${condition.label}</span></a>`
       )
       .join("");
   });

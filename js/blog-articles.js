@@ -82,9 +82,9 @@
         "<h3>" + PLACEHOLDER.title + "</h3>" +
         "<p>" + PLACEHOLDER.description + "</p>" +
         "<div class=\"article-card__meta\">" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\" alt=\"\">" + PLACEHOLDER.likes + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\" alt=\"\">" + PLACEHOLDER.readTime + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\" alt=\"\">" + PLACEHOLDER.days + "</span>" +
         "</div>";
 
       card.appendChild(imageWrap);
@@ -122,9 +122,9 @@
         "<h3>" + PLACEHOLDER.title + "</h3>" +
         "<p>" + PLACEHOLDER.description + "</p>" +
         "<div class=\"article-card__meta\">" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + PLACEHOLDER.likes + "</span>" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + PLACEHOLDER.readTime + "</span>" +
-        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + PLACEHOLDER.days + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\" alt=\"\">" + PLACEHOLDER.likes + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\" alt=\"\">" + PLACEHOLDER.readTime + "</span>" +
+        "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\" alt=\"\">" + PLACEHOLDER.days + "</span>" +
         "</div>";
 
       card.appendChild(imageWrap);

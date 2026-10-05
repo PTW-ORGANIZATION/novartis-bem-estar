@@ -70,6 +70,8 @@ function initHeroCarousel() {
   const carousel = document.querySelector("[data-hero-carousel]");
   if (!carousel) return;
 
+  const ROOT_PREFIX = location.pathname.indexOf("/pages/") !== -1 ? "../" : "";
+
   const slides = carousel.querySelectorAll(".hero__slide");
   const dots = carousel.querySelectorAll("[data-hero-dot]");
   let current = 0;
@@ -82,7 +84,7 @@ function initHeroCarousel() {
       const isActive = i === current;
       dot.classList.toggle("is-active", isActive);
       const img = dot.querySelector("img");
-      if (img) img.src = `/assets/icons/dot-${isActive ? "active" : "inactive"}.svg`;
+      if (img) img.src = `${ROOT_PREFIX}assets/icons/dot-${isActive ? "active" : "inactive"}.svg`;
     });
   }
 

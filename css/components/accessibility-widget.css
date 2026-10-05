@@ -24,6 +24,32 @@
   height: 42.463px;
 }
 
+@media (max-width: 1200px) {
+  .a11y-widget {
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .a11y-widget button,
+  .a11y-widget img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .a11y-widget {
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .a11y-widget button,
+  .a11y-widget img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 @media (max-width: 720px) {
   .a11y-widget {
     display: none;

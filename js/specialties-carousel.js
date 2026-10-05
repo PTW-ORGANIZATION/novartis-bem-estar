@@ -10,7 +10,7 @@ function renderSpecialtyCards() {
       ([key, specialty]) => `
       <a href="${ROOT_PREFIX}pages/${key}.html" class="specialty-card">
         <div class="specialty-card__image">
-          <img src="${ROOT_PREFIX}assets/images/${specialty.cardImage}">
+          <img src="${ROOT_PREFIX}assets/images/${specialty.cardImage}" title="${specialty.cardImageTitle || ""}" alt="${specialty.cardImageAlt || ""}">
         </div>
         <div class="specialty-card__body">
           <span class="tag">Especialidade</span>

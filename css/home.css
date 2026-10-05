@@ -320,6 +320,18 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.52) 37%, rgba(0, 0, 0, 0) 78%);
   }
 
+  .hero__slide:nth-child(2) > img {
+    position: absolute;
+    inset: auto;
+    top: -38.75%;
+    left: -108.46%;
+    width: 239.77%;
+    height: 139.89%;
+    max-width: none;
+    object-fit: unset;
+    object-position: unset;
+  }
+
   .hero__content {
     left: 20px;
     right: 20px;

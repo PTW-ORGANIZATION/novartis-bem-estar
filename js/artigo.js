@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '<span class="tag tag--dark">' + SIDEBAR_RELATED_CARD.tag + '</span>' +
         '<h3>' + SIDEBAR_RELATED_CARD.title + '</h3>' +
         '<div class="artigo-related-card__meta">' +
-        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-like.svg">' + SIDEBAR_RELATED_CARD.likes + '</span>' +
-        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-timer.svg">' + SIDEBAR_RELATED_CARD.readTime + '</span>' +
-        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-calendar.svg">' + SIDEBAR_RELATED_CARD.days + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-like.svg" alt="">' + SIDEBAR_RELATED_CARD.likes + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-timer.svg" alt="">' + SIDEBAR_RELATED_CARD.readTime + '</span>' +
+        '<span><img src="' + ROOT_PREFIX + 'assets/icons/icon-calendar.svg" alt="">' + SIDEBAR_RELATED_CARD.days + '</span>' +
         '</div>' +
         '</div>';
       sidebarRelatedList.appendChild(card);

@@ -4,6 +4,8 @@
     ame: [
       {
         image: "ame-article-sintomas.jpg",
+        imageAlt: "Mãos de um adulto segurando os dois pezinhos de um bebê apoiado sobre o colo.",
+        imageTitle: "Pezinhos de bebê no colo",
         tag: "AME",
         title: "Sinais e sintomas da AME e doenças neuromusculares",
         description: "Comportamentos humanos essenciais, como engolir, respirar e locomover, dependem de um controle...",
@@ -13,6 +15,8 @@
       },
       {
         image: "ame-article-rede-apoio.jpg",
+        imageAlt: "Pai sorrindo enquanto segura um bebê no colo em um quarto infantil.",
+        imageTitle: "Pai segurando o bebê no colo",
         tag: "AME",
         title: "Rede de apoio em AME: saiba onde buscar ajuda",
         description: "Para tornar mais fácil a aceitação e a convivência com o diagnóstico da atrofia muscular espinhal...",
@@ -22,6 +26,8 @@
       },
       {
         image: "ame-article-guia-completo.jpg",
+        imageAlt: "Mulher sorrindo com os olhos fechados enquanto segura um bebê recém-nascido no colo, próximo a uma janela.",
+        imageTitle: "Mulher segurando bebê recém-nascido",
         tag: "AME",
         title: "Guia completo sobre a AME",
         description: "Este guia foi feito para ajudar você a entender o diagnóstico de AME e agir com mais segurança...",
@@ -33,6 +39,8 @@
     "asma-grave": [
       {
         image: "asma-grave-artigo-corticoides.png",
+        imageAlt: "Mulher pensativa com a mão no queixo observa caixas de medicamentos em uma prateleira de farmácia.",
+        imageTitle: "Mulher observando caixas de medicamentos",
         tag: "Asma Grave",
         title: "Riscos do uso de corticoides no tratamento da asma",
         description: "Não é novidade que o objetivo do tratamento da asma é prevenir as crises, mantendo a doença...",
@@ -42,6 +50,8 @@
       },
       {
         image: "asma-grave-artigo-grave.png",
+        imageAlt: "Imagem ilustrada em fundo azul claro com a frase \"Asma: não é normal ter sintomas\" em letras grandes. Ao lado do texto, aparece um personagem em formato arredondado e sorridente, representando um pulmão, com braços e pernas.",
+        imageTitle: "Ilustração sobre sintomas da asma",
         tag: "Asma Grave",
         title: "A asma é uma doença grave e pode matar",
         description: "Infelizmente a asma ainda não tem cura, mas existem tratamentos capazes de controlar a doença a ponto...",
@@ -51,6 +61,8 @@
       },
       {
         image: "asma-grave-artigo-alergica.png",
+        imageAlt: "Menina ao ar livre, ao lado de flores amarelas, espirra com os olhos fechados e a boca aberta.",
+        imageTitle: "Menina espirrando perto de flores",
         tag: "Asma Grave",
         title: "Asma alérgica e asma não alérgica? Conheça as diferenças e semelhanças",
         description: "Pode ser difícil entender a relação da asma com a alergia (e como uma asma pode ser alérgica...",
@@ -62,6 +74,8 @@
     "cancer-de-mama": [
       {
         image: "cancer-de-mama-artigo-qualidade-vida.png",
+        imageAlt: "Mulher negra de cabelos cacheados sorri olhando para o lado, com fundo roxo e a logomarca Bem Estar Saúde Novartis ao lado do texto \"#Meu Caminho\".",
+        imageTitle: "Mulher sorridente na campanha Meu Caminho",
         tag: "Câncer de Mama",
         title: "Qualidade de vida também faz parte do tratamento",
         description: "Cuidar de si não é só sobre exames e medicamentos. É também sobre manter, no seu tempo e no seu...",
@@ -71,6 +85,8 @@
       },
       {
         image: "cancer-de-mama-artigo-saude-mental.png",
+        imageAlt: "Mulher de cabelos castanhos e camisa amarela sorri, com fundo em tons de roxo e a logomarca Bem Estar Saúde Novartis ao lado do texto \"#Meu Caminho\".",
+        imageTitle: "Mulher sorridente com camisa amarela na campanha",
         tag: "Câncer de Mama",
         title: "Saúde mental: quando sentir também é cuidar",
         description: "Você já ouviu que precisa ser forte, mas ninguém precisa fingir que está tudo bem o tempo todo. E...",
@@ -80,6 +96,8 @@
       },
       {
         image: "cancer-de-mama-artigo-direitos.png",
+        imageAlt: "Três mulheres vestindo camisas brancas sorriem abraçadas, com fundo roxo e o texto \"#Meu Caminho\" ao lado da logomarca Bem Estar Saúde Novartis.",
+        imageTitle: "Três mulheres se abraçando na campanha Meu Caminho",
         tag: "Câncer de Mama",
         title: "Você tem direitos: conheça seus direitos como paciente com câncer de mama",
         description: "Receber o diagnóstico de câncer de mama metastático não é apenas um momento desafiador...",
@@ -91,6 +109,8 @@
     "cancer-de-prostata": [
       {
         image: "cancer-de-prostata-artigo-medicina-precisao.png",
+        imageAlt: "Cientista negra com lenço estampado na cabeça observa uma amostra ao microscópio em laboratório, usando jaleco branco.",
+        imageTitle: "Cientista analisando amostra em laboratório",
         tag: "Câncer de Próstata",
         title: "Medicina de precisão no tratamento do câncer de próstata",
         description: "A medicina de precisão, também conhecida como medicina personalizada, é uma abordagem de...",
@@ -100,6 +120,8 @@
       },
       {
         image: "cancer-de-prostata-artigo-jornada.png",
+        imageAlt: "Mulher de cabelos cacheados ruivos, sorridente, vestindo blazer branco, sentada em ambiente com janelas de vidro ao fundo.",
+        imageTitle: "Mulher sorridente em ambiente corporativo",
         tag: "Câncer de Próstata",
         title: "A jornada com Câncer de Próstata: conscientização, prevenção e qualidade...",
         description: "Um dos principais desafios no enfrentamento do câncer de próstata é a resistência de muitos...",
@@ -109,6 +131,8 @@
       },
       {
         image: "cancer-de-prostata-artigo-tratamento.png",
+        imageAlt: "Homem mais velho de cabelo e barba grisalhos conversa gesticulando com uma profissional de saúde de uniforme azul, sentados em um sofá.",
+        imageTitle: "Paciente conversando com profissional de saúde",
         tag: "Câncer de Próstata",
         title: "Tratamento do câncer de próstata",
         description: "O tratamento do câncer de próstata deve ser feito de forma individualizada, por um médico especializado, após a definição dos riscos, benefícios e melhores...",
@@ -120,6 +144,8 @@
     "colesterol-alto": [
       {
         image: "colesterol-alto-artigo-niveis.png",
+        imageAlt: "Médico de jaleco branco segura o pulso de um paciente idoso durante consulta, em consultório com janelas ao fundo.",
+        imageTitle: "Médico examinando o pulso do paciente",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "O nível de colesterol ideal para pessoas de risco muito alto",
@@ -130,6 +156,8 @@
       },
       {
         image: "colesterol-alto-artigo-convivendo.png",
+        imageAlt: "Casal de idosos dançando e sorrindo em um jardim, de mãos dadas, cercados por plantas verdes.",
+        imageTitle: "Casal de idosos dançando no jardim",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "Convivendo com a hipercolesterolemia",
@@ -140,6 +168,8 @@
       },
       {
         image: "colesterol-alto-artigo-equipe.png",
+        imageAlt: "Grupo de profissionais de saúde em close, usando jalecos brancos e uniformes azuis com estetoscópios no pescoço, lado a lado.",
+        imageTitle: "Equipe de profissionais de saúde reunida",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "Colesterol alto: Equipe de tratamento",
@@ -152,6 +182,8 @@
     "dor-nas-costas": [
       {
         image: "dor-nas-costas-artigo-exercicio.png",
+        imageAlt: "Close-up dos pés de uma pessoa caminhando ao ar livre, calçando tênis esportivos coloridos, com fundo desfocado de vegetação verde.",
+        imageTitle: "Pés calçados com tênis durante caminhada",
         tag: "Dor nas Costas",
         title: "Exercício físico e Espondiloartrite Axial",
         description: "Gillian Eames explica porque o movimento tem um papel tão importante no gerenciamento da Espondiloartrite Axial. Aumentar a conscientização...",
@@ -161,6 +193,8 @@
       },
       {
         image: "dor-nas-costas-artigo-exame.png",
+        imageAlt: "Homem sentado em consultório médico, tendo sangue coletado do braço por uma profissional de saúde uniformizada, com tubos de coleta visíveis ao fundo.",
+        imageTitle: "Coleta de sangue para exame laboratorial",
         tag: "Dor nas Costas",
         title: "Saiba mais sobre o exame para a suspeita de espondilite anquilosante",
         description: "O diagnóstico precoce pode fazer uma grande diferença no tratamento da espondilite...",
@@ -170,6 +204,8 @@
       },
       {
         image: "dor-nas-costas-artigo-entesite.png",
+        imageAlt: "Ilustração de raio-x da coluna vertebral e da pelve em tons de roxo e azul escuro, com a região da coluna lombar destacada em laranja e vermelho indicando inflamação.",
+        imageTitle: "Ilustração de inflamação na coluna vertebral",
         tag: "Dor nas Costas",
         title: "Entesite: possível sinal de espondilite anquilosante",
         description: "O nosso corpo dá sinais, ainda mais quando o assunto é saúde. A entesite, por exemplo, pode ser...",
@@ -181,6 +217,8 @@
     "esclerose-multipla": [
       {
         image: "esclerose-multipla-artigo-tipos.png",
+        imageAlt: "Casal sênior em uma cozinha, ele sentado de camisa laranja apoiando o braço na mesa, ela em pé ao lado com a mão sobre o ombro dele, ambos olhando para o braço com expressão atenta.",
+        imageTitle: "Casal sênior observando atentamente o braço",
         tag: "Esclerose Múltipla",
         title: "Entenda as diferentes tipos de Esclerose Multipla e suas particularidades",
         description: "A esclerose múltipla (EM) é considerada uma doença crônica, sendo contínua ao longo da vida. As...",
@@ -190,6 +228,8 @@
       },
       {
         image: "esclerose-multipla-artigo-progressao.png",
+        imageAlt: "Mulher de cabelos ruivos dirigindo um carro, com as duas mãos no volante e cinto de segurança, olhando atentamente para a estrada.",
+        imageTitle: "Mulher dirigindo um carro atentamente",
         tag: "Esclerose Múltipla",
         title: "Progressão da Esclerose Múltipla: Entendendo o Caminho e Buscando...",
         description: "O que é a progressão na EM? A esclerose múltipla (EM) é uma doença que...",
@@ -199,6 +239,8 @@
       },
       {
         image: "esclerose-multipla-artigo-mitos.png",
+        imageAlt: "Homem de óculos, sentado a uma mesa de madeira em casa, digitando em um notebook com o celular apoiado à frente, cercado de papéis e anotações.",
+        imageTitle: "Homem trabalhando em notebook em casa",
         tag: "Esclerose Múltipla",
         title: "Esclerose múltipla sem mistério: Mitos e verdades que você precisa saber",
         description: "A esclerose múltipla (EM) pode parecer uma doença neurológica complexa, mas fica muito mais fácil...",
@@ -210,6 +252,8 @@
     furunculo: [
       {
         image: "furunculo-artigo-sintomas.png",
+        imageAlt: "Close-up de profissional de saúde usando luvas e um dermatoscópio para examinar a pele do ombro de uma paciente deitada.",
+        imageTitle: "Exame de pele com dermatoscópio",
         tag: "Furúnculo",
         title: "3 sintomas que o furúnculo pode ter",
         description: "O furúnculo é um dos tipos de foliculite bacteriana, com a infeção geralmente causada pela Staphylococcus aureus. Segundo a Sociedade...",
@@ -219,6 +263,8 @@
       },
       {
         image: "furunculo-artigo-consulta.png",
+        imageAlt: "Imagem ilustrada em fundo claro com a frase \"Será que é furúnculo?\" em letras grandes e coloridas. Ao lado do texto, aparece um personagem arredondado usando óculos, com expressão de dúvida, e à esquerda uma máscara de carnaval colorida.",
+        imageTitle: "Ilustração da campanha \"Será que é furúnculo?\"",
         tag: "Furúnculo",
         title: "Dicas para aproveitar melhor sua consulta médica",
         description: "Existem algumas doenças que podem se confundir com o furúnculo. Por isso, preparamos um guia...",
@@ -228,6 +274,8 @@
       },
       {
         image: "furunculo-artigo-tipos.png",
+        imageAlt: "Close-up de mulher levantando o braço e tocando a região da axila com a mão, observando a pele do local, vestindo blusa de renda.",
+        imageTitle: "Mulher observando a pele da região da axila",
         tag: "Furúnculo",
         title: "Existem diferentes tipos de furúnculo?",
         description: "Os furúnculos são uma infecção cutânea e se enquadram na categoria das foliculites. A infecção é causada, geralmente, pela Staphylococcus aureus...",
@@ -239,6 +287,8 @@
     "hidradenite-supurativa": [
       {
         image: "hidradenite-supurativa-artigo-convivendo.png",
+        imageAlt: "Homem e mulher fazendo alongamento ao ar livre, apoiando a perna sobre uma grade de metal, sorrindo, com árvores verdes ao fundo.",
+        imageTitle: "Casal se alongando ao ar livre",
         tag: "Hidradenite Supurativa",
         title: "Convivendo com a hidradenite supurativa (HS)",
         description: "Viver com uma doença de pele de longa duração (crônica), como a HS, pode afetar a saúde física...",
@@ -248,6 +298,8 @@
       },
       {
         image: "hidradenite-supurativa-artigo-sintomas.png",
+        imageAlt: "Close-up da axila de uma pessoa, com a mão tocando a pele próxima a um nódulo visível sob a pele, ao lado da alça de uma blusa.",
+        imageTitle: "Close-up de nódulo na pele da axila",
         tag: "Hidradenite Supurativa",
         title: "Quais são os sintomas da hidradenite supurativa (HS)?",
         description: "Quais são os sintomas da hidradenite supurativa (HS)? A hidradenite supurativa (HS) é caracterizada...",
@@ -257,6 +309,8 @@
       },
       {
         image: "hidradenite-supurativa-artigo-tratamento.png",
+        imageAlt: "Médica de jaleco branco anota em um bloco de notas enquanto conversa com uma paciente sorridente sentada à sua frente, em uma sala clara.",
+        imageTitle: "Médica conversando com paciente em consulta",
         tag: "Hidradenite Supurativa",
         title: "Tratamento da hidradenite supurativa (HS)",
         description: "Os tratamentos atuais para hidradenite supurativa (HS) são baseados em três pilares...",
@@ -268,6 +322,8 @@
     hpn: [
       {
         image: "hpn-artigo-fadiga.png",
+        imageAlt: "Mulher deitada em um sofá com o braço apoiado sobre a testa, em sinal de cansaço, enquanto uma criança caminha ao fundo da sala.",
+        imageTitle: "Mulher cansada deitada no sofá",
         tag: "HPN",
         title: "Monitorando a fadiga causada pela HPN: como avaliar e melhorar a qualidade de...",
         description: "A fadiga é um dos sintomas mais comuns e importantes para pessoas com Hemoglobinúria...",
@@ -277,6 +333,8 @@
       },
       {
         image: "hpn-artigo-qualidade.png",
+        imageAlt: "Close-up das mãos de uma pessoa entrelaçadas sobre uma mesa ao lado de um médico de jaleco branco e estetoscópio, que preenche um formulário em uma prancheta.",
+        imageTitle: "Paciente e médico preenchendo formulário",
         tag: "HPN",
         title: "Como a Hemólise e a HPN Afetam sua Qualidade de Vida",
         description: "A hemoglobinúria paroxística noturna (HPN) é uma doença complexa e desafiadora, que exige uma...",
@@ -286,6 +344,8 @@
       },
       {
         image: "hpn-artigo-efeitos.png",
+        imageAlt: "Close-up das mãos de um médico de jaleco branco e estetoscópio, escrevendo com caneta em um formulário preso a uma prancheta azul, com um notebook aberto ao lado.",
+        imageTitle: "Médico preenchendo prontuário ao computador",
         tag: "HPN",
         title: "Compreendendo a HPN e Seus Efeitos",
         description: "A hemoglobinúria paroxística noturna (HPN) é uma doença ultrarrara que afeta o sangue e pode impactar diretamente a qualidade de vida de quem convive...",
@@ -297,6 +357,8 @@
     infarto: [
       {
         image: "infarto-artigo-colesterol-ideal.png",
+        imageAlt: "Médico de jaleco branco, com estetoscópio no pescoço, examinando o pulso de um paciente idoso sorridente em um consultório iluminado.",
+        imageTitle: "Médico examinando paciente idoso",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "O nível de colesterol ideal para pessoas de risco muito alto",
@@ -307,6 +369,8 @@
       },
       {
         image: "infarto-artigo-hipercolesterolemia.png",
+        imageAlt: "Casal de idosos dançando e sorrindo em um jardim, de mãos dadas, cercados por plantas verdes.",
+        imageTitle: "Casal idoso dançando no jardim",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "Convivendo com a hipercolesterolemia",
@@ -317,6 +381,8 @@
       },
       {
         image: "infarto-artigo-equipe-tratamento.png",
+        imageAlt: "Equipe de profissionais de saúde em pé, lado a lado, vestindo jalecos e uniformes com estetoscópios pendurados no pescoço.",
+        imageTitle: "Equipe de profissionais de saúde",
         imageCaption: "Imagem meramente ilustrativa.",
         tag: "Colesterol Alto",
         title: "Colesterol alto: Equipe de tratamento",
@@ -329,6 +395,8 @@
     lmc: [
       {
         image: "lmc-artigo-conscientizacao.png",
+        imageAlt: "Médico com jaleco branco e estetoscópio mostra informações em um tablet para um casal sentado à sua frente, em um ambiente hospitalar.",
+        imageTitle: "Médico conversando com casal sobre exames",
         tag: "LMC",
         title: "Setembro: Mês da Conscientização das Doenças do Sangue",
         description: "Setembro marca o Mês da Conscientização das Doenças do Sangue, um momento importante para...",
@@ -338,6 +406,8 @@
       },
       {
         image: "lmc-artigo-tratamentos.png",
+        imageAlt: "Homem sorridente brincando com um disco voador junto de uma menina e um menino em um gramado arborizado.",
+        imageTitle: "Pai brincando com os filhos em um parque",
         tag: "LMC",
         title: "Tratamentos disponíveis para a Leucemia Mieloide Crônica",
         description: "A Leucemia Mieloide Crônica (LMC) é um tipo de câncer do sangue que que possui tratamento e...",
@@ -347,6 +417,8 @@
       },
       {
         image: "lmc-artigo-qualidade-vida.png",
+        imageAlt: "Mulher idosa sorridente com as mãos unidas em frente ao peito, em pose de meditação, com duas profissionais de saúde vestindo uniformes azuis caminhando ao fundo em um parque.",
+        imageTitle: "Mulher idosa praticando exercício ao ar livre",
         tag: "LMC",
         title: "Melhorando a qualidade de vida de pacientes com doenças do sangue",
         description: "Conviver com uma doença hematológica, como leucemia, linfoma ou mieloma múltiplo, pode ser...",
@@ -358,6 +430,8 @@
     mielofibrose: [
       {
         image: "mielofibrose-artigo-o-que-e.png",
+        imageAlt: "Mãos com luvas azuis manuseando um microscópio em laboratório, ajustando a lâmina sob a lente para análise.",
+        imageTitle: "Análise de amostra em microscópio",
         tag: "Mielofibrose",
         title: "O que é mielofibrose?",
         description: "A mielofibrose é um tipo de câncer no sangue, mais comum em pessoas acima dos 50 anos, no qual a medula óssea, o tecido macio e esponjoso dentro...",
@@ -367,6 +441,8 @@
       },
       {
         image: "mielofibrose-artigo-sintomas.png",
+        imageAlt: "Homem de meia-idade sentado em um sofá com os olhos fechados, pressionando a testa com a mão em sinal de cansaço ou mal-estar.",
+        imageTitle: "Homem demonstrando cansaço e desconforto",
         tag: "Mielofibrose",
         title: "Quais são os sinais e sintomas da mielofibrose?",
         description: "Os sintomas mais comuns da mielofibrose são fraqueza grave (consequência da anemia) e baço...",
@@ -376,6 +452,8 @@
       },
       {
         image: "mielofibrose-artigo-diagnostico.png",
+        imageAlt: "Profissional de saúde com luvas segura um suporte com tubos de ensaio etiquetados, contendo amostras de sangue para análise.",
+        imageTitle: "Tubos de amostras de sangue para exame",
         tag: "Mielofibrose",
         title: "Como é feito o diagnóstico da mielofibrose?",
         description: "O diagnóstico da mielofibrose não é uma etapa fácil, uma vez que em estágios iniciais o paciente não...",
@@ -387,6 +465,8 @@
     psoriase: [
       {
         image: "psoriase-artigo-progressao.png",
+        imageAlt: "Close-up de uma mão afastando os cabelos para mostrar placas de psoríase avermelhadas e descamativas no couro cabeludo, próximo à nuca.",
+        imageTitle: "Psoríase no couro cabeludo próximo à nuca",
         tag: "Psoríase",
         title: "Psoríase além da pele: como ela pode evoluir para Artrite Psoriásica",
         description: "A Psoríase é uma doença inflamatória crônica da pele, de origem autoimune, que causa placas...",
@@ -396,6 +476,8 @@
       },
       {
         image: "psoriase-artigo-palmoplantar.png",
+        imageAlt: "Close-up das mãos de um médico de jaleco branco segurando com cuidado a mão de um paciente, sobre uma mesa com uma prancheta.",
+        imageTitle: "Médico segurando a mão de um paciente",
         tag: "Psoríase",
         title: "Psoríase palmoplantar: o que é e como é possível controlar?",
         description: "A psoríase pode ocorrer em diferentes partes do corpo e se manifestar de várias maneiras...",
@@ -405,6 +487,8 @@
       },
       {
         image: "psoriase-artigo-etapas.png",
+        imageAlt: "Close-up de um médico com jaleco branco e estetoscópio segurando a mão de um paciente sobre uma mesa de madeira, em gesto de acolhimento.",
+        imageTitle: "Médico segurando a mão de paciente com acolhimento",
         tag: "Psoríase",
         title: "As principais etapas da psoríase",
         description: "Às vezes problemas de pele surgem sem motivo. Você está lá, imerso em sua vida diária, quando uma mancha vermelha desagradável começa a se...",
@@ -416,6 +500,8 @@
     "urticaria-uce": [
       {
         image: "urticaria-uce-artigo-1.png",
+        imageAlt: "Mulher espirra em um lenço de papel ao ar livre, em um parque, sob um galho de árvore com flores roxas.",
+        imageTitle: "Mulher espirrando ao ar livre no parque",
         tag: "UCE",
         title: "Conheça as diferenças entre alergia e UCE (Urticária Crônica Espontânea)",
         description: "Você tem amigos ou familiares que têm alergia ao pólen? Talvez alguém que você conheça seja...",
@@ -425,6 +511,8 @@
       },
       {
         image: "urticaria-uce-artigo-2.png",
+        imageAlt: "Close-up de mãos de uma equipe de profissionais de saúde, vestindo uniformes verdes e brancos, unidas em sinal de união sobre uma pasta verde.",
+        imageTitle: "Equipe de profissionais de saúde unindo as mãos",
         tag: "UCE",
         title: "UCE: diretriz mundial estabelece o tratamento correto para o controle...",
         description: "Nada como o avanço da medicina e das pesquisas para trazer novas perspectivas de qualidade de...",
@@ -434,6 +522,8 @@
       },
       {
         image: "urticaria-uce-artigo-3.png",
+        imageAlt: "Mulher de cabelos escuros e robe rosa coça o pescoço com os dedos, de olhos fechados e expressão de incômodo.",
+        imageTitle: "Mulher coçando o pescoço com desconforto",
         tag: "UCE",
         title: "Entendendo os sintomas da UCE: por que tenho tanta coceira?",
         description: "Não se coçar quando uma crise de Urticária Crônica Espontânea (UCE) começa parece simplesmente...",
@@ -445,6 +535,8 @@
     "artrite-psoriasica": [
       {
         image: "artrite-psoriasica-artigo-tipos.png",
+        imageAlt: "Mão aberta com os dedos esticados, em close, sobre fundo em tons de rosa e lilás.",
+        imageTitle: "Mão aberta em close",
         tag: "Artrite Psoriásica",
         title: "Quais são os tipos de artrite psoriásica?",
         description: "A artrite psoriásica se manifesta de diferentes maneiras, e cada tipo tem características próprias...",
@@ -454,6 +546,8 @@
       },
       {
         image: "artrite-psoriasica-artigo-cuidados.png",
+        imageAlt: "Homem ajoelhado ao ar livre segurando o próprio joelho com as duas mãos, usando tênis esportivo.",
+        imageTitle: "Homem segurando o joelho ao ar livre",
         tag: "Artrite Psoriásica",
         title: "Cuidados e sintomas da artrite psoriásica",
         description: "Problemas de saúde como a artrite psoriásica podem ser cansativos para a mente e o corpo...",
@@ -463,6 +557,8 @@
       },
       {
         image: "artrite-psoriasica-artigo-sexo.png",
+        imageAlt: "Casal sorrindo com os rostos próximos, em um momento de carinho e cumplicidade.",
+        imageTitle: "Casal sorrindo em momento de carinho",
         tag: "Artrite Psoriásica",
         title: "Sexo e artrite psoriásica: como abordar o assunto com seu parceiro",
         description: "Conciliar a vida sexual com uma doença crônica como a artrite psoriásica (AP) pode ser...",
@@ -488,6 +584,8 @@
         imageWrap.className = "related-article-card__image";
         var img = document.createElement("img");
         img.src = ROOT_PREFIX + "assets/images/" + item.image;
+        img.alt = item.imageAlt || "";
+        if (item.imageTitle) img.title = item.imageTitle;
         imageWrap.appendChild(img);
         if (item.imageCaption) {
           var caption = document.createElement("span");
@@ -503,9 +601,9 @@
           "<h3>" + item.title + "</h3>" +
           "<p>" + item.description + "</p>" +
           "<div class=\"related-article-card__meta\">" +
-          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\">" + item.likes + "</span>" +
-          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\">" + item.readTime + "</span>" +
-          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\">" + item.date + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-like.svg\" alt=\"\">" + item.likes + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-timer.svg\" alt=\"\">" + item.readTime + "</span>" +
+          "<span><img src=\"" + ROOT_PREFIX + "assets/icons/icon-calendar.svg\" alt=\"\">" + item.date + "</span>" +
           "</div>";
 
         card.appendChild(imageWrap);
