@@ -91,6 +91,38 @@
   height: 100%;
 }
 
+/* Tablet (601px–1024px): no layout desktop o carrossel usa aspect-ratio
+   bem largo (1140/404); numa largura de tablet isso resulta numa altura
+   baixa demais pro bloco de texto (título em 3 linhas + parágrafo + botão),
+   que acaba encostando/sobrepondo os pontinhos de navegação. Aqui só
+   deixamos o carrossel um pouco mais alto e o texto um pouco menor,
+   mantendo o mesmo layout horizontal (texto à esquerda sobre a foto). */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero__carousel {
+    aspect-ratio: 1140 / 560;
+  }
+
+  .hero__content {
+    top: 32px;
+    left: 32px;
+    max-width: 55%;
+    gap: 8px;
+  }
+
+  .hero__content h1 {
+    font-size: 32px;
+  }
+
+  .hero__content p {
+    font-size: 15px;
+  }
+
+  .hero__dots {
+    left: 32px;
+    bottom: 24px;
+  }
+}
+
 .program {
   display: flex;
   flex-direction: column;

@@ -74,6 +74,28 @@
   }
 }
 
+/* Tablet (721px–1024px): a imagem some em telas de tablet porque a caixa de
+   texto (regra acima) passa a ocupar 100% da largura e cobre a foto, que nas
+   páginas de doença individual é posicionada com left/width em pixels fixos
+   (calculados pro layout desktop). Aqui reaproveitamos o padrão proporcional
+   (%) já usado em cancer-de-mama/dor-nas-costas, que não tem esse problema. */
+@media (min-width: 721px) and (max-width: 1024px) {
+  .condition-hero__content {
+    width: 46%;
+    max-width: 46%;
+    padding: 32px 24px;
+  }
+
+  .condition-hero .condition-hero__image {
+    left: 42%;
+    width: 58%;
+  }
+
+  .condition-hero__caption {
+    display: none;
+  }
+}
+
 @media (max-width: 720px) {
   .condition-hero {
     height: auto;
