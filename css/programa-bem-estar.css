@@ -441,6 +441,16 @@
   }
 }
 
+/* Tablet (721px–1024px): com 4 colunas a largura de cada card fica
+   pequena demais nessa faixa e o texto de "Lembrete de exames" /
+   "Início de tratamento" quebra em duas linhas. Reaproveitamos aqui o
+   mesmo grid de 2 colunas já usado no mobile (abaixo de 720px). */
+@media (min-width: 721px) and (max-width: 1024px) {
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 720px) {
   .benefit-grid {
     grid-template-columns: repeat(2, 1fr);
