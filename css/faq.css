@@ -163,6 +163,10 @@ body {
   text-decoration: underline;
 }
 
+.faq-item__answer a strong {
+  color: inherit;
+}
+
 .faq-item.is-collapsed .faq-item__answer {
   display: none;
 }
