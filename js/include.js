@@ -19,8 +19,8 @@ const SPECIALTY_CONDITIONS = {
     conditions: [
       { label: "Hidradenite Supurativa", icon: "condition-hidradenite-supurativa.svg", href: ROOT_PREFIX + "pages/hidradenite-supurativa.html" },
       { label: "Furúnculo", icon: "condition-furunculo.svg", href: ROOT_PREFIX + "pages/furunculo.html" },
-      { label: "Urticária (UCE)", icon: "condition-urticaria.svg", href: ROOT_PREFIX + "pages/urticaria-uce.html" },
       { label: "Psoríase", icon: "condition-psoriase.svg", href: ROOT_PREFIX + "pages/psoriase.html" },
+      { label: "Urticária (UCE)", icon: "condition-urticaria.svg", href: ROOT_PREFIX + "pages/urticaria-uce.html" },
     ],
   },
   oncologia: {
