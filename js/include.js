@@ -10,17 +10,6 @@ async function includePartial(selector, url) {
 }
 
 const SPECIALTY_CONDITIONS = {
-  cardiologia: {
-    label: "cardiologia",
-    cardDescription: "Informação e cuidado para a saúde do coração",
-    cardImage: "specialty-cardiologia.png",
-    cardImageTitle: "Casal idoso abraçado e sorrindo ao ar livre",
-    cardImageAlt: "Homem e mulher sêniores abraçados e rindo em uma área arborizada ao pôr do sol.",
-    conditions: [
-      { label: "Infarto", icon: "condition-infarto.svg", href: ROOT_PREFIX + "pages/infarto.html" },
-      { label: "Colesterol Alto", icon: "condition-colesterol-alto.svg", href: ROOT_PREFIX + "pages/colesterol-alto.html" },
-    ],
-  },
   dermatologia: {
     label: "dermatologia",
     cardDescription: "Informação e cuidado para saúde da pele",
@@ -32,6 +21,39 @@ const SPECIALTY_CONDITIONS = {
       { label: "Furúnculo", icon: "condition-furunculo.svg", href: ROOT_PREFIX + "pages/furunculo.html" },
       { label: "Urticária (UCE)", icon: "condition-urticaria.svg", href: ROOT_PREFIX + "pages/urticaria-uce.html" },
       { label: "Psoríase", icon: "condition-psoriase.svg", href: ROOT_PREFIX + "pages/psoriase.html" },
+    ],
+  },
+  oncologia: {
+    label: "oncologia",
+    cardDescription: "Informação e cuidado ao logo da jornada oncológica",
+    cardImage: "specialty-oncologia.png",
+    cardImageTitle: "Prática de yoga ao ar livre em grupo",
+    cardImageAlt: "Mulher de camiseta roxa com os braços abertos olhando para cima durante aula de yoga ao ar livre.",
+    conditions: [
+      { label: "Câncer de Mama", icon: "condition-cancer-mama.svg", href: ROOT_PREFIX + "pages/cancer-de-mama.html" },
+      { label: "Câncer de Próstata", icon: "condition-cancer-prostata.svg", href: ROOT_PREFIX + "pages/cancer-de-prostata.html" },
+    ],
+  },
+  neurologia: {
+    label: "neurologia",
+    cardDescription: "Informação e cuidado para saúde neurológica",
+    cardImage: "specialty-neurologia.png",
+    cardImageTitle: "Avó segurando bebê ao ar livre",
+    cardImageAlt: "Mulher idosa segurando um bebê no ar com carinho no jardim em frente a uma casa.",
+    conditions: [
+      { label: "Esclerose Múltipla", icon: "condition-esclerose-multipla.svg", href: ROOT_PREFIX + "pages/esclerose-multipla.html" },
+      { label: "Atrofia Muscular Espinhal (AME)", icon: "condition-ame.svg", href: ROOT_PREFIX + "pages/ame.html" },
+    ],
+  },
+  cardiologia: {
+    label: "cardiologia",
+    cardDescription: "Informação e cuidado para a saúde do coração",
+    cardImage: "specialty-cardiologia.png",
+    cardImageTitle: "Casal idoso abraçado e sorrindo ao ar livre",
+    cardImageAlt: "Homem e mulher sêniores abraçados e rindo em uma área arborizada ao pôr do sol.",
+    conditions: [
+      { label: "Infarto", icon: "condition-infarto.svg", href: ROOT_PREFIX + "pages/infarto.html" },
+      { label: "Colesterol Alto", icon: "condition-colesterol-alto.svg", href: ROOT_PREFIX + "pages/colesterol-alto.html" },
     ],
   },
   hematologia: {
@@ -53,28 +75,6 @@ const SPECIALTY_CONDITIONS = {
     cardImageTitle: "Família reunida sorrindo no sofá de casa",
     cardImageAlt: "Avô, mãe e garotinho sentados juntos em um sofá na sala de estar, interagindo alegremente.",
     conditions: [{ label: "Doenças Renais Graves (C3G e IgAN)", icon: "condition-doencas-renais-graves.svg", href: ROOT_PREFIX + "index.html" }],
-  },
-  neurologia: {
-    label: "neurologia",
-    cardDescription: "Informação e cuidado para saúde neurológica",
-    cardImage: "specialty-neurologia.png",
-    cardImageTitle: "Avó segurando bebê ao ar livre",
-    cardImageAlt: "Mulher idosa segurando um bebê no ar com carinho no jardim em frente a uma casa.",
-    conditions: [
-      { label: "Esclerose Múltipla", icon: "condition-esclerose-multipla.svg", href: ROOT_PREFIX + "pages/esclerose-multipla.html" },
-      { label: "Atrofia Muscular Espinhal (AME)", icon: "condition-ame.svg", href: ROOT_PREFIX + "pages/ame.html" },
-    ],
-  },
-  oncologia: {
-    label: "oncologia",
-    cardDescription: "Informação e cuidado ao logo da jornada oncológica",
-    cardImage: "specialty-oncologia.png",
-    cardImageTitle: "Prática de yoga ao ar livre em grupo",
-    cardImageAlt: "Mulher de camiseta roxa com os braços abertos olhando para cima durante aula de yoga ao ar livre.",
-    conditions: [
-      { label: "Câncer de Mama", icon: "condition-cancer-mama.svg", href: ROOT_PREFIX + "pages/cancer-de-mama.html" },
-      { label: "Câncer de Próstata", icon: "condition-cancer-prostata.svg", href: ROOT_PREFIX + "pages/cancer-de-prostata.html" },
-    ],
   },
   pneumologia: {
     label: "pneumologia",
