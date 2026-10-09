@@ -49,7 +49,7 @@ Site estático em HTML + CSS + JavaScript puro (sem frameworks/build step), gera
 
 ## Como rodar localmente
 ```
-cd "/Users/victor.lima/Documents/COMPANIES/NOVARTIS"
+cd "/Users/victor.lima/Documents/COMPANIES/NOVARTIS/Site Novartis - BEM ESTAR/codigo"
 python3 -m http.server 8090
 ```
 Depois abrir `http://localhost:8090/index.html`. (A porta 8080 está ocupada por outro serviço nesta máquina — use 8090.)
